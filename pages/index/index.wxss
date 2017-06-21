@@ -1,0 +1,78 @@
+/* index.wxss */
+
+.images-panel{
+  width: 100%;
+}
+
+.img-swiper-item{
+  width: 100%;
+  height: 100%;
+}
+
+.tab-panel{
+  width: 100%;
+}
+
+.tabbar{
+  width: 100%;
+  height: 40rpx;
+}
+
+.tabbar-item{
+  float:left;
+  width: 200rpx;
+}
+
+.info-basic-group{
+  height: 180rpx;
+  width: 100%;
+}
+
+.info-logo{
+  width: 100rpx;
+}
+
+.info-name-group{
+  width: 350rpx;
+}
+
+.info-phone{
+  width: 150rpx;
+}
+
+.info-wechat{
+  width: 150rpx;
+}
+
+.info-basic{
+  float:left;
+}
+
+.info-location{
+  width: 100%;
+  padding-left:10rpx;
+  padding-right: 10rpx; 
+}
+
+.info-location-left{
+  width: 600rpx;
+  float: left;
+  font-size: 0.8em;
+}
+
+.right-arrow{
+  float: left;
+  width: 130rpx;
+}
+
+.info-open-time{
+  width: 100%;
+}
+
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
