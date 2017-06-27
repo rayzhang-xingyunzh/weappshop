@@ -5,8 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    name:"曼果宠物乐园",
-    phoneNumber:18502794699,
+    name:"曼果宠物乐园", codeUrl:'http://forweapp.oss-cn-shanghai.aliyuncs.com/code.jpeg',
+    phoneNumber:"18502794699",
     location:{
       address:'武汉市武昌区宝通寺路百瑞景一期1-6商铺',
       latidude: 30.51974,
@@ -14,7 +14,8 @@ Page({
       name:'曼果宠物'
     },
     tabSelectedIndex:0,
-    openTime:'9:00-21:00'
+    openTime:'9:00-21:00',
+    nameGroupWidth:"200rpx"
   },
 
   selectTab:function(event){
@@ -35,8 +36,24 @@ Page({
   },
 
   phoneCall:function(){
-    wx.makePhoneCall({
-      phoneNumber: this.data.phoneNumber,
+    var pn = this.data.phoneNumber
+    wx.showActionSheet({
+      itemList: ["呼叫 " + pn],
+      success:function(res){
+        if(res.tapIndex == 0){
+          wx.makePhoneCall({
+            phoneNumber: pn,
+          })
+        }
+      },fail:function(res){
+        console.log(res)
+      }
+    })
+  },
+
+  showCode:function(){
+    wx.previewImage({
+      urls: [this.data.codeUrl],
     })
   },
 

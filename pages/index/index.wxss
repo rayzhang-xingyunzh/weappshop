@@ -1,9 +1,17 @@
 /* index.wxss */
 
+.page{
+  width: 100%
+}
+
 .images-panel{
   padding-top:20rpx;
   padding-bottom: 20rpx; 
-  width: 100%;
+  /*width: 100%;*/
+}
+
+.images-panel swiper{
+  height:350rpx;
 }
 
 .img-swiper-item{
@@ -29,6 +37,11 @@
 
 .tab{
   height: 450rpx;
+}
+
+.info-panel{
+  background-color: black;
+  color: white;
 }
 
 .info-basic-group{
@@ -68,6 +81,12 @@
 
 .info-wechat{
   width: 150rpx;
+  height: 100%;
+}
+
+.info-wechat image {
+  height: 100%;
+  width: 100%;
 }
 
 .info-basic{
@@ -75,7 +94,7 @@
 }
 
 .info-location{
-  width: 100%;
+  /*width: 100%;*/
   padding-left:10rpx;
   padding-right: 10rpx; 
   height: 80rpx;

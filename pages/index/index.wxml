@@ -34,7 +34,9 @@
       <view class="info-phone info-basic">
         <image src="/src/images/default.png" catchtap="phoneCall"></image>
       </view>
-      <view class="info-wechat info-basic">wechat</view>
+      <view class="info-wechat info-basic">
+        <image src="/src/images/code.jpeg" catchtap="showCode"></image>
+      </view>
     </view>
     <view class="info-location" catchtap="showLocation">
       <view class="info-location-left">{{location.address}}</view>
