@@ -3,13 +3,13 @@
   <view class="images-panel">
     <swiper indicator-dots="true">
       <swiper-item>
-        <image class="img-swiper-item" mode="scaleToFill" src="/src/images/logo.png"></image>
+        <image class="img-swiper-item" mode="scaleToFill" src="/src/images/default.png"></image>
       </swiper-item>
       <swiper-item>
-        <image class="img-swiper-item" mode="scaleToFill" src="/src/images/logo.png"></image>
+        <image class="img-swiper-item" mode="scaleToFill" src="/src/images/logo-mango.jpeg"></image>
       </swiper-item>
       <swiper-item>
-        <image class="img-swiper-item" mode="scaleToFill" src="/src/images/logo.png"></image>
+        <image class="img-swiper-item" mode="scaleToFill" src="/src/images/default.png"></image>
       </swiper-item>
     </swiper>
   </view>
@@ -27,9 +27,13 @@
 
   <view class="info-panel">
     <view class="info-basic-group">
-      <view class="info-logo info-basic">logo</view>
-      <view class="info-name-group info-basic">name</view>
-      <view class="info-phone info-basic">phone</view>
+      <view class="info-logo info-basic">
+        <image src="/src/images/logo-mango.jpeg"></image>
+      </view>
+      <view class="info-name-group info-basic">{{name}}</view>
+      <view class="info-phone info-basic">
+        <image src="/src/images/default.png" catchtap="phoneCall"></image>
+      </view>
       <view class="info-wechat info-basic">wechat</view>
     </view>
     <view class="info-location" catchtap="showLocation">

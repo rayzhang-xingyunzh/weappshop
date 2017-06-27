@@ -5,8 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
+    name:"曼果宠物乐园",
+    phoneNumber:18502794699,
     location:{
-      address:'湖北省武汉市武昌区宝通寺路百瑞景(南一区)1-6商铺',
+      address:'武汉市武昌区宝通寺路百瑞景一期1-6商铺',
       latidude: 30.51974,
       longitude: 114.33411,
       name:'曼果宠物'
@@ -32,6 +34,12 @@ Page({
     })
   },
 
+  phoneCall:function(){
+    wx.makePhoneCall({
+      phoneNumber: this.data.phoneNumber,
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -47,37 +55,9 @@ Page({
   },
 
   /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
   
   },
 

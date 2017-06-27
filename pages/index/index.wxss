@@ -1,6 +1,8 @@
 /* index.wxss */
 
 .images-panel{
+  padding-top:20rpx;
+  padding-bottom: 20rpx; 
   width: 100%;
 }
 
@@ -15,29 +17,53 @@
 
 .tabbar{
   width: 100%;
-  height: 40rpx;
+  height: 80rpx;
 }
 
 .tabbar-item{
+  padding: 10rpx;
   float:left;
   width: 200rpx;
+  text-align: center;
+}
+
+.tab{
+  height: 450rpx;
 }
 
 .info-basic-group{
-  height: 180rpx;
+  height: 140rpx;
   width: 100%;
+  background-color: orange;
 }
 
 .info-logo{
   width: 100rpx;
+  margin: 20rpx;
+}
+
+.info-logo image{
+  width: 100rpx;
+  height: 100rpx;
 }
 
 .info-name-group{
-  width: 350rpx;
+  margin-top: 20rpx;
+  width: 302rpx;
 }
 
 .info-phone{
+  height: 100%;
   width: 150rpx;
+  border-color: lightgoldenrodyellow;
+  border-width:4rpx; 
+  border-right-style:groove;
+  border-left-style:ridge; 
+}
+
+.info-phone image{
+  height: 100%;
+  width: 100%;
 }
 
 .info-wechat{
@@ -52,21 +78,29 @@
   width: 100%;
   padding-left:10rpx;
   padding-right: 10rpx; 
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 0.9em;
 }
 
 .info-location-left{
-  width: 600rpx;
+  width: 650rpx;
   float: left;
-  font-size: 0.8em;
+  height: 100%;
 }
 
 .right-arrow{
   float: left;
-  width: 130rpx;
+  height: 100%;
+  width: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
 }
 
 .info-open-time{
   width: 100%;
+  font-size: 0.9em;
+  padding: 10rpx
 }
 
 .show{
