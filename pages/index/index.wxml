@@ -1,15 +1,16 @@
 <!--index.wxml-->
+<import src="/templates/promotionCell/promotionCell.wxml"/>
 <view class="page">
   <view class="images-panel">
     <swiper indicator-dots="true">
       <swiper-item>
-        <image class="img-swiper-item" mode="scaleToFill" src="/src/images/default.png"></image>
+        <image class="img-swiper-item" mode="aspectFill" src="/src/images/default.png"></image>
       </swiper-item>
       <swiper-item>
-        <image class="img-swiper-item" mode="scaleToFill" src="/src/images/logo-mango.jpeg"></image>
+        <image class="img-swiper-item" mode="aspectFill" src="/src/images/logo-mango.jpeg"></image>
       </swiper-item>
       <swiper-item>
-        <image class="img-swiper-item" mode="scaleToFill" src="/src/images/default.png"></image>
+        <image class="img-swiper-item" mode="aspectFill" src="/src/images/default.png"></image>
       </swiper-item>
     </swiper>
   </view>
@@ -21,7 +22,11 @@
     </view>
     <view class="tabs">
       <view class="{{tabSelectedIndex == 0?'show':'hide'}} tab">公告</view>
-      <view class="{{tabSelectedIndex == 1?'show':'hide'}} tab">优惠</view>
+      <view class="{{tabSelectedIndex == 1?'show':'hide'}} tab">
+        <view wx:for="{{promotions}}">
+          <template is="promotionCell"></template>
+        </view>
+      </view>
     </view>
   </view>
 

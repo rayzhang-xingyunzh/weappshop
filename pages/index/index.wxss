@@ -1,13 +1,6 @@
-/* index.wxss */
-
-.page{
-  width: 100%
-}
-
 .images-panel{
   padding-top:20rpx;
   padding-bottom: 20rpx; 
-  /*width: 100%;*/
 }
 
 .images-panel swiper{
@@ -94,7 +87,6 @@
 }
 
 .info-location{
-  /*width: 100%;*/
   padding-left:10rpx;
   padding-right: 10rpx; 
   height: 80rpx;
@@ -111,15 +103,14 @@
 .right-arrow{
   float: left;
   height: 100%;
-  width: 80rpx;
   line-height: 80rpx;
   text-align: center;
 }
 
 .info-open-time{
-  width: 100%;
+  width: 60%;
   font-size: 0.9em;
-  padding: 10rpx
+  padding: 10rpx;
 }
 
 .show{

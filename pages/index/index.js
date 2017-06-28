@@ -5,6 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
+    promotions:[{
+
+    },{
+      
+    }],
     name:"曼果宠物乐园", codeUrl:'http://forweapp.oss-cn-shanghai.aliyuncs.com/code.jpeg',
     phoneNumber:"18502794699",
     location:{
@@ -70,7 +75,9 @@ Page({
   onReady: function () {
   
   },
+  onShow:function(){
 
+  },
   /**
    * 生命周期函数--监听页面卸载
    */

@@ -1,0 +1,5 @@
+<template name="promotionCell">
+  <view class="promotion">
+    一条优惠
+  </view>
+</template>
