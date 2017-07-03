@@ -1,0 +1,16 @@
+.promotion{
+  height: 150rpx;
+  margin:10rpx;
+  background-color: darkorange;
+  color: white;
+}
+
+.promotion image{
+  float:left; 
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.promotion-cell-text{
+  float:left;
+}

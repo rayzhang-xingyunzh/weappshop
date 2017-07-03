@@ -17,15 +17,43 @@
 
   <view class="tab-panel">
     <view class="tabbar">
-      <view class="tabbar-item" data-tabid="0" catchtap="selectTab">最新公告</view>
-      <view class="tabbar-item" data-tabid="1" catchtap="selectTab">门店优惠</view>
+      <view class="{{tabSelectedIndex == 0?'tabbar-item-selected':'tabbar-item-normal'}} tabbar-item" data-tabid="0" catchtap="selectTab">
+        
+        <view class="text-vertical-middle-wrapper">
+          <image src="/src/images/{{tabSelectedIndex == 0?'notice_selected.png':'notice_normal.png'}}"/>最新公告
+        </view>
+      </view>
+      <view class="{{tabSelectedIndex == 1?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="1" catchtap="selectTab">
+        <view class="text-vertical-middle-wrapper">
+        <image src="/src/images/{{tabSelectedIndex == 1?'promotion_selected.png':'promotion_normal.png'}}"/>
+          门店优惠
+        </view>
+      </view>
+      <view class="{{tabSelectedIndex == 2?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="2" catchtap="selectTab">
+        <view class="text-vertical-middle-wrapper">
+        <image src="/src/images/{{tabSelectedIndex == 2?'combos_selected.png':'combos_normal.png'}}"/>
+          超值套餐
+        </view>
+      </view>
     </view>
     <view class="tabs">
-      <view class="{{tabSelectedIndex == 0?'show':'hide'}} tab">公告</view>
-      <view class="{{tabSelectedIndex == 1?'show':'hide'}} tab">
-        <view wx:for="{{promotions}}">
-          <template is="promotionCell"></template>
+      <view class="{{tabSelectedIndex == 0?'show':'hide'}} tab-notice tab">
+        <block wx:for="{{notices}}" wx:key="item">
+          <template is="promotionCell" data="{{...item}}"></template>
+        </block>
+      </view>
+      <view class="{{tabSelectedIndex == 1?'show':'hide'}} tab-promotion tab">
+        <image src="/src/images/promotion.png"></image>
+        <view class="promotion-text">
+        <view>全场满200元</view>
+        <view class="line-two">可享受9.8折</view>
         </view>
+        
+      </view>
+      <view class="{{tabSelectedIndex == 2?'show':'hide'}} tab-promotion tab">
+        <block wx:for="{{combos}}">
+          <template is="promotionCell"></template>
+        </block>
       </view>
     </view>
   </view>
@@ -35,20 +63,41 @@
       <view class="info-logo info-basic">
         <image src="/src/images/logo-mango.jpeg"></image>
       </view>
-      <view class="info-name-group info-basic">{{name}}</view>
-      <view class="info-phone info-basic">
-        <image src="/src/images/default.png" catchtap="phoneCall"></image>
+      <view class="info-name-group info-basic">
+        <view class="info-name-chinese">
+          {{name}}
+        </view>
+        <view class="info-name-english">
+          {{englishName}}
+        </view>
       </view>
-      <view class="info-wechat info-basic">
-        <image src="/src/images/code.jpeg" catchtap="showCode"></image>
+      <view class="info-wechat info-basic-right">
+        <image src="/src/images/wechat.png" catchtap="showCode"></image>
       </view>
+      <view class="info-phone info-basic-right">
+        <image src="/src/images/phone.png" catchtap="phoneCall"></image>
+      </view>
+
     </view>
     <view class="info-location" catchtap="showLocation">
-      <view class="info-location-left">{{location.address}}</view>
-      <view class="right-arrow">></view>
+      
+      <view class="info-location-left">
+        <view class="text-vertical-middle-wrapper">
+        <image src="/src/images/location.png"></image>
+          {{location.address}}
+        </view>
+      </view>
+      <view class="right-arrow">
+        <view class="text-vertical-middle-wrapper">
+          >
+        </view>
+      </view>
     </view>
     <view class="info-open-time">
-      {{openTime}}
+      <view class="text-vertical-middle-wrapper">
+      <image src="/src/images/time.png"></image>
+        {{openTime}}
+      </view>
     </view>
   </view>
 </view>

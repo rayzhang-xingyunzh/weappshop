@@ -5,11 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-    promotions:[{
-
+    notices:[{
+      image:"/src/images/default.png",
+      title:"买比瑞吉狗粮猫粮小包满100元",
+      subTitle:"赠送20元高端零食"
     },{
-      
+
     }],
+    combos:[{}],
+    englishName:"Mango's Pet",
     name:"曼果宠物乐园", codeUrl:'http://forweapp.oss-cn-shanghai.aliyuncs.com/code.jpeg',
     phoneNumber:"18502794699",
     location:{
@@ -20,7 +24,7 @@ Page({
     },
     tabSelectedIndex:0,
     openTime:'9:00-21:00',
-    nameGroupWidth:"200rpx"
+    tabsHeight: 450
   },
 
   selectTab:function(event){
@@ -66,7 +70,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    wx.getExtConfig({
+      
+    })
   },
 
   /**
@@ -76,7 +82,15 @@ Page({
   
   },
   onShow:function(){
-
+    // var that = this
+    // wx.getSystemInfo({
+    //   success: function (res) {
+    //     console.log(res);
+    //     that.setData({
+    //       tabsHeight: res.windowHeight / res.windowWidth * 750 - 300 - 400 - 30
+    //     });
+    //   }
+    // });
   },
   /**
    * 生命周期函数--监听页面卸载
