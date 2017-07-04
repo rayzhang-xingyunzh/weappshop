@@ -1,6 +1,12 @@
+
+
+.scroll-area{
+  height: 77.5%;
+}
+
 .images-panel{
-  height:30%;
-  background-image: url(https://ooo.0o0.ooo/2017/07/03/595a3cb5f1054.png);
+  height:350rpx;
+  background-image: url(http://i2.kiimg.com/599607/e978ba3e0fd1ec3ds.png);
   background-size: 100% 100%;
 }
 
@@ -25,36 +31,40 @@
 
 .tabbar{
   background-color: #474443;
-  height: 80rpx;
+  height: 70rpx;
   padding-top:10rpx;
   padding-right: 6rpx;
   padding-left: 6rpx;
 }
 
 .tabbar-item{
-  font-size: 1.2em;
+  padding-right:10rpx;
+  padding-left:10rpx; 
+  font-size: 35rpx;
   height: 100%;
   color: white;
   margin-right: 8rpx;
   margin-left: 8rpx;
   float:left;
-  width: 230rpx;
+  width: 210rpx;
   text-align: center;
   display: table;
 }
 
 .tabbar-item image{
-  height: 32rpx;
-  width: 32rpx;
-  margin-right:15rpx; 
+  height: 100%;
+  width: 45rpx;
+  /*margin-right:5rpx; */
 }
 
 .tabbar-item-selected{
   background-color: #f8c228;
+  color:#5f5d5d;
 }
 
 .tabbar-item-normal{
   background-color: #5f5d5d;
+  color:#f8c228;
 }
 
 .text-vertical-middle-wrapper{
@@ -68,26 +78,34 @@
 }
 
 .tab-notice{
-  background-color: darkorange;
+  background-color: #f8c228;
 }
 
 .tab-promotion{
   background: linear-gradient(to bottom,#f8c328,#ed9e29);
 }
 
+.tab-combos{
+  background-color: #474443;
+}
+
 .tab-promotion image{
   float: left;
   margin-top:40rpx;
   margin-left: 40rpx;
-  height: 360rpx;
+  height: 400rpx;
   width: 310rpx;
+  filter: drop-shadow(8rpx 8rpx 8rpx #666666);
 }
 
 .promotion-text{
   float: left;
   margin-left:20rpx;
   margin-top:130rpx;
-  font-size: 2em;
+  font-size: 60rpx;
+  font-weight: bolder;
+  font-family: fantasy;
+  filter: drop-shadow(8rpx 8rpx 8rpx #666666);
 }
 
 .line-two {
@@ -95,8 +113,9 @@
 }
 
 .tab{
-  padding-top: 10rpx;
-  min-height:700rpx;
+  background-color: #474443;
+  /*padding-top: 10rpx;*/
+  min-height:600rpx;
 }
 
 .info-panel{
@@ -112,7 +131,6 @@
   height: 56%;
   width: 100%;
   background: linear-gradient(to bottom,#f8c328,#ed9e29);
-  
 }
 
 .info-logo{
@@ -126,22 +144,25 @@
 }
 
 .info-name-group{
-  margin-top: 20rpx;
+  padding-top: 20rpx;
   width: 302rpx;
   color: black;
+  border-right:#f2b028 solid 2rpx;
 }
 
 .info-name-chinese{
-  font-size: 1.2em;
+  font-size: 40rpx;
+}
+
+.info-name-english{
+  font-size: 35rpx;
 }
 
 .info-phone{
   height: 100%;
   width: 148rpx;
-  border-color: #f8c33a;
-  border-width:2rpx; 
-  border-right-style:ridge;
-  border-left-style:ridge; 
+  border-right:#f2b028 solid 2rpx;
+  border-left:#f8c33a solid 2rpx;
 }
 
 .info-phone image,.info-wechat image{
@@ -154,8 +175,8 @@
 .info-wechat{
   width: 150rpx;
   height: 100%;
+  border-left:#f8c33a solid 2rpx;
 }
-
 
 .info-basic{
   float:left;
@@ -166,45 +187,54 @@
 }
 
 .info-location{
+  border-width: 2rpx;
+  border-bottom-style: solid;
+  border-color: #3a3835;
   padding-left:10rpx;
   padding-right: 10rpx; 
-  height: 22%;
+  height: 24%;
   display: table;
-  font-size: 0.9em;
+  font-size: 28rpx;
+  width: 100%;
 }
 
 .info-location image{
   float: left;
-  height: 30rpx;
-  width: 19rpx;
+  height: 100%;
+  width: 30rpx;
   margin-right:15rpx;
-  margin-left: 15rpx;
+  margin-left: 10rpx;
 }
 
 .info-location-left{
   display: table;
-  width: 650rpx;
+  /*width: 650rpx;*/
   float: left;
   height: 100%;
 }
 
 .right-arrow{
-  display: table;
-  float: left;
+  /*display: table;*/
+  float: right;
   height: 100%;
-  width: 60rpx;
-  text-align: center;
-  font-size: 1.5em;
+  width: 100rpx;
+  /*text-align: center;*/
+  /*font-size: 1.5em;*/
   color:#ffb80b;
 }
 
+.right-arrow image{
+  height: 100%;
+  width: 35rpx;
+}
+
 .info-open-time{
-  border-width: 5px;
-  border-top-style: ridge;
-  border-color: #474443;
+  border-width: 2rpx;
+  border-top-style: solid;
+  border-color: #585755;
   display: table;
   width: 100%;
-  font-size: 0.9em;
+  font-size:28rpx;
   padding-left: 10rpx;
   padding-right:10rpx;
   height:22%;
@@ -212,11 +242,19 @@
 
 .info-open-time image{
   float: left;
-  height: 30rpx;
+  height: 100%;
   width: 30rpx;
-  margin-right:10rpx;
+  margin-right:15rpx;
   margin-left: 10rpx;
 }
+
+.info-open-time-left{
+   display: table;
+  /*width: 650rpx;*/
+  float: left;
+  height: 100%;
+}
+
 
 .show{
   display: block;

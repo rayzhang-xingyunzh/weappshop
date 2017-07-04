@@ -1,63 +1,68 @@
 <!--index.wxml-->
-<import src="/templates/promotionCell/promotionCell.wxml"/>
+<import src="/templates/promotionCell/promotionCell.wxml" />
 <view class="page">
-  <view class="images-panel">
-    <swiper indicator-dots="true">
-      <swiper-item>
-        <image class="img-swiper-item" mode="aspectFill" src="/src/images/default.png"></image>
-      </swiper-item>
-      <swiper-item>
-        <image class="img-swiper-item" mode="aspectFill" src="/src/images/logo-mango.jpeg"></image>
-      </swiper-item>
-      <swiper-item>
-        <image class="img-swiper-item" mode="aspectFill" src="/src/images/default.png"></image>
-      </swiper-item>
-    </swiper>
-  </view>
+  <scroll-view scroll-y="true" class="scroll-area">
+    <!--<view class="page">-->
+    <view class="images-panel">
+      <swiper catchtap="showImages" indicator-dots="true">
+        <swiper-item>
+          <image class="img-swiper-item" mode="aspectFill" src="http://i2.kiimg.com/599607/1d62a752430b2b05s.png"></image>
+        </swiper-item>
+        <swiper-item>
+          <image class="img-swiper-item" mode="aspectFill" src="http://i2.kiimg.com/599607/bc88dd1fb5aa5898s.png"></image>
+        </swiper-item>
+        <swiper-item>
+          <image class="img-swiper-item" mode="aspectFill" src="http://i2.kiimg.com/599607/ad5279f2d433082es.jpg"></image>
+        </swiper-item>
+      </swiper>
+    </view>
 
-  <view class="tab-panel">
-    <view class="tabbar">
-      <view class="{{tabSelectedIndex == 0?'tabbar-item-selected':'tabbar-item-normal'}} tabbar-item" data-tabid="0" catchtap="selectTab">
-        
-        <view class="text-vertical-middle-wrapper">
-          <image src="/src/images/{{tabSelectedIndex == 0?'notice_selected.png':'notice_normal.png'}}"/>最新公告
+    <view class="tab-panel">
+      <view class="tabbar">
+        <view class="{{tabSelectedIndex == 0?'tabbar-item-selected':'tabbar-item-normal'}} tabbar-item" data-tabid="0" catchtap="selectTab">
+          <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 0?'notice_selected.png':'notice_normal.png'}}" />
+          <view class="text-vertical-middle-wrapper">
+            最新公告
+          </view>
+        </view>
+        <view class="{{tabSelectedIndex == 1?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="1" catchtap="selectTab">
+          <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 1?'promotion_selected.png':'promotion_normal.png'}}" />
+          <view class="text-vertical-middle-wrapper">
+            门店优惠
+          </view>
+        </view>
+        <view class="{{tabSelectedIndex == 2?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="2" catchtap="selectTab">
+          <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 2?'combos_selected.png':'combos_normal.png'}}" />
+          <view class="text-vertical-middle-wrapper">
+            超值套餐
+          </view>
         </view>
       </view>
-      <view class="{{tabSelectedIndex == 1?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="1" catchtap="selectTab">
-        <view class="text-vertical-middle-wrapper">
-        <image src="/src/images/{{tabSelectedIndex == 1?'promotion_selected.png':'promotion_normal.png'}}"/>
-          门店优惠
+      <view class="tabs">
+        <view class="{{tabSelectedIndex == 0?'show':'hide'}} tab-notice tab">
+          <block wx:for="{{notices}}" wx:key="item">
+            <template is="promotionCell{{index%2==0?'Even':'Odd'}}" data="{{...item}}"></template>
+          </block>
         </view>
-      </view>
-      <view class="{{tabSelectedIndex == 2?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="2" catchtap="selectTab">
-        <view class="text-vertical-middle-wrapper">
-        <image src="/src/images/{{tabSelectedIndex == 2?'combos_selected.png':'combos_normal.png'}}"/>
-          超值套餐
+        <view class="{{tabSelectedIndex == 1?'show':'hide'}} tab-promotion tab">
+          <image mode="aspectFit" src="/src/images/promotion.png"></image>
+          <view class="promotion-text">
+            <view>全场满200元</view>
+            <view class="line-two">可享受9.8折!</view>
+          </view>
+
+        </view>
+        <view class="{{tabSelectedIndex == 2?'show':'hide'}} tab-combos tab">
+          <block wx:for="{{combos}}" wx:key="item">
+            <template is="promotionCell{{index%2==0?'Even':'Odd'}}" data="{{...item}}"></template>
+          </block>
         </view>
       </view>
     </view>
-    <view class="tabs">
-      <view class="{{tabSelectedIndex == 0?'show':'hide'}} tab-notice tab">
-        <block wx:for="{{notices}}" wx:key="item">
-          <template is="promotionCell" data="{{...item}}"></template>
-        </block>
-      </view>
-      <view class="{{tabSelectedIndex == 1?'show':'hide'}} tab-promotion tab">
-        <image src="/src/images/promotion.png"></image>
-        <view class="promotion-text">
-        <view>全场满200元</view>
-        <view class="line-two">可享受9.8折</view>
-        </view>
-        
-      </view>
-      <view class="{{tabSelectedIndex == 2?'show':'hide'}} tab-promotion tab">
-        <block wx:for="{{combos}}">
-          <template is="promotionCell"></template>
-        </block>
-      </view>
-    </view>
-  </view>
 
+
+    <!--</view>-->
+  </scroll-view>
   <view class="info-panel">
     <view class="info-basic-group">
       <view class="info-logo info-basic">
@@ -80,24 +85,25 @@
 
     </view>
     <view class="info-location" catchtap="showLocation">
-      
+
       <view class="info-location-left">
+        <image mode="aspectFit" src="/src/images/location.png"></image>
         <view class="text-vertical-middle-wrapper">
-        <image src="/src/images/location.png"></image>
           {{location.address}}
         </view>
       </view>
       <view class="right-arrow">
-        <view class="text-vertical-middle-wrapper">
-          >
-        </view>
+        <image mode="aspectFit" src="/src/images/right_arrow.png"></image>
       </view>
     </view>
     <view class="info-open-time">
-      <view class="text-vertical-middle-wrapper">
-      <image src="/src/images/time.png"></image>
-        {{openTime}}
+      <view class="info-open-time-left">
+        <image mode="aspectFit" src="/src/images/time.png"></image>
+        <view class="text-vertical-middle-wrapper">
+          {{openTime}}
+        </view>
       </view>
+
     </view>
   </view>
 </view>
