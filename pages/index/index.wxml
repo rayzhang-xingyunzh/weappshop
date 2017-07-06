@@ -4,16 +4,12 @@
   <scroll-view scroll-y="true" class="scroll-area">
     <!--<view class="page">-->
     <view class="images-panel">
-      <swiper catchtap="showImages" indicator-dots="true">
+      <swiper autoplay="true" catchtap="showImages" indicator-dots="true">
+        <block wx:for="{{bannerImages}}" wx:key="item">
         <swiper-item>
-          <image class="img-swiper-item" mode="aspectFill" src="http://i2.kiimg.com/599607/1d62a752430b2b05s.png"></image>
+          <image class="img-swiper-item" mode="aspectFill" src="{{item}}"></image>
         </swiper-item>
-        <swiper-item>
-          <image class="img-swiper-item" mode="aspectFill" src="http://i2.kiimg.com/599607/bc88dd1fb5aa5898s.png"></image>
-        </swiper-item>
-        <swiper-item>
-          <image class="img-swiper-item" mode="aspectFill" src="http://i2.kiimg.com/599607/ad5279f2d433082es.jpg"></image>
-        </swiper-item>
+        </block>
       </swiper>
     </view>
 

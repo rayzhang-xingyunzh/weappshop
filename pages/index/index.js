@@ -5,14 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
+    bannerImages: ["http://i4.piimg.com/599607/f888c69f6d478aees.jpg", "http://i2.kiimg.com/599607/96633e3dd0d8b693s.jpg","http://i4.piimg.com/599607/14ab50fbc4b0595es.jpg"],
+    bannerOriginalImages: ["http://i4.piimg.com/599607/f888c69f6d478aee.jpg", "http://i2.kiimg.com/599607/96633e3dd0d8b693.jpg", "http://i4.piimg.com/599607/14ab50fbc4b0595e.jpg"],
     notices: [{
-      origin: "http://i2.kiimg.com/599607/bc88dd1fb5aa5898.png",
-      image: "http://i2.kiimg.com/599607/bc88dd1fb5aa5898t.jpg",
+      origin: "http://i4.piimg.com/599607/5d13c9c05ba39927.jpg",
+      image: "http://i4.piimg.com/599607/5d13c9c05ba39927t.jpg",
       title: "买比瑞吉狗粮猫粮小包满100元",
       subTitle: "赠送价值20元高端零食！"
     }, {
-      origin: "http://i2.kiimg.com/599607/bc88dd1fb5aa5898.png",
-      image: "http://i2.kiimg.com/599607/bc88dd1fb5aa5898t.jpg",
+        origin: "http://i4.piimg.com/599607/b7013f50074a3dab.jpg",
+      image: "http://i4.piimg.com/599607/b7013f50074a3dabt.jpg",
       title: "买比瑞吉狗粮猫粮大包满300元",
       subTitle: "赠送价值80元高端零食+专用储粮桶！"
     }, {
@@ -21,8 +23,8 @@ Page({
       title: "买耐吉斯狗粮",
       subTitle: "送麦德氏超浓缩卵磷脂150G一盒！"
     }, {
-      origin: "http://i2.kiimg.com/599607/bc88dd1fb5aa5898.png",
-      image: "http://i2.kiimg.com/599607/bc88dd1fb5aa5898t.jpg",
+        origin: "http://i4.piimg.com/599607/ae8e25c823b3ee1b.jpg",
+      image: "http://i4.piimg.com/599607/ae8e25c823b3ee1bt.jpg",
       title: "grest犬猫综合营养膏",
       subTitle: "买二送一"
     }, {
