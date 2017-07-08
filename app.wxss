@@ -1,4 +1,6 @@
 @import '/templates/promotionCell/promotionCell.wxss';
+@import '/templates/vipCell/vipCell.wxss';
+
 
 page{
   height: 100%;

@@ -6,15 +6,15 @@
 
 .images-panel{
   height:350rpx;
-  background-image: url(http://i2.kiimg.com/599607/e978ba3e0fd1ec3ds.png);
+  background-image: url(http://i1.buimg.com/599607/82da9313f7d3b08b.png);
   background-size: 100% 100%;
 }
 
 .images-panel swiper{
-  padding-top:7%; 
-  padding-left: 15%;
-  height:70%;
-  width: 70%;
+  padding-top:5%; 
+  padding-left: 7%;
+  height:80%;
+  width: 86%;
 }
 
 .img-swiper-item{
@@ -89,27 +89,52 @@
   background-color: #474443;
 }
 
-.tab-promotion image{
+.vip-levels {
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
+  height: 410rpx;
+  background-color: #474443;
+}
+
+.vip-levels-content{
+  float:left;
+  width: 650rpx;
+}
+
+.vip-benefit{
+  height: 200rpx;
+}
+
+.vip-promote{
   float: left;
-  margin-top:40rpx;
+  width: 100rpx;
+}
+
+.vip-promote-text{
+  line-height: 40rpx;
+  color: #f8c228;
+  width:40rpx;
+  word-wrap: break-word;
+  font-family: monospace;
+  margin-top:120rpx;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.vip-benefit image{
+  width: 280rpx;
+  height: 200rpx;
+  float: left;
   margin-left: 40rpx;
-  height: 400rpx;
-  width: 310rpx;
-  filter: drop-shadow(8rpx 8rpx 8rpx #666666);
 }
 
-.promotion-text{
+.benefit-text{
   float: left;
-  margin-left:20rpx;
-  margin-top:130rpx;
-  font-size: 60rpx;
-  font-weight: bolder;
-  font-family: fantasy;
-  filter: drop-shadow(8rpx 8rpx 8rpx #666666);
-}
-
-.line-two {
-  margin-top:30rpx;
+  margin-top: 32rpx;
+  margin-left: 40rpx;
+  font-size: 23rpx;
+  line-height: 35rpx;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .tab{
