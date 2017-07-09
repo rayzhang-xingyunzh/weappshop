@@ -6,7 +6,7 @@
 }
 
 .even{
-  background-color: #f6bd28;
+  background-color: #f8c228;
 }
 
 .even .promotion-cell-title{
@@ -32,7 +32,9 @@
 .promotion image{
   float:left; 
   margin-top:10rpx;
-  width: 160rpx;
+  padding-left:20rpx;
+  padding-right:20rpx;
+  width: 120rpx;
   height: 120rpx;
 }
 

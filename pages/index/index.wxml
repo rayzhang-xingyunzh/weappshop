@@ -18,19 +18,19 @@
       <view class="tabbar">
         <view class="{{tabSelectedIndex == 0?'tabbar-item-selected':'tabbar-item-normal'}} tabbar-item" data-tabid="0" catchtap="selectTab">
           <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 0?'notice_selected.png':'notice_normal.png'}}" />
-          <view class="text-vertical-middle-wrapper">
+          <view class="tab-item-text text-vertical-middle-wrapper">
             最新公告
           </view>
         </view>
         <view class="{{tabSelectedIndex == 1?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="1" catchtap="selectTab">
           <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 1?'promotion_selected.png':'promotion_normal.png'}}" />
-          <view class="text-vertical-middle-wrapper">
+          <view class="tab-item-text  text-vertical-middle-wrapper">
             门店优惠
           </view>
         </view>
         <view class="{{tabSelectedIndex == 2?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="2" catchtap="selectTab">
           <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 2?'combos_selected.png':'combos_normal.png'}}" />
-          <view class="text-vertical-middle-wrapper">
+          <view class="tab-item-text  text-vertical-middle-wrapper">
             超值套餐
           </view>
         </view>
@@ -45,7 +45,7 @@
 
         <view class="{{tabSelectedIndex == 0?'show':'hide'}} tab-promotion tab">
           <view class="vip-benefit">
-            <image mode="aspectFit" src="http://i1.buimg.com/599607/b5a22f22d3a31c25.png " />
+            <image mode="aspectFit" src="http://i4.piimg.com/599607/e95d0283e91909cb.png" />
             <view class="benefit-text">
               <view>1.会员爱宠铭牌定制</view>
               <view>2.会员爱宠洗澡美容专用毛巾</view>

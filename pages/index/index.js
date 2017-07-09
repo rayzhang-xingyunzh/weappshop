@@ -87,8 +87,10 @@ Page({
  * 页面的初始数据
  */
   , data: {
-    bannerImages: ["http://i4.piimg.com/599607/f888c69f6d478aees.jpg", "http://i2.kiimg.com/599607/96633e3dd0d8b693s.jpg", "http://i4.piimg.com/599607/14ab50fbc4b0595es.jpg"],
-    bannerOriginalImages: ["http://i4.piimg.com/599607/f888c69f6d478aee.jpg", "http://i2.kiimg.com/599607/96633e3dd0d8b693.jpg", "http://i4.piimg.com/599607/14ab50fbc4b0595e.jpg"],
+    bannerImages: ["http://i4.piimg.com/599607/f888c69f6d478aees.jpg", 
+      "http://i4.piimg.com/599607/f2d19660169cd36fs.jpg", "http://i2.kiimg.com/599607/96633e3dd0d8b693s.jpg", "http://i4.piimg.com/599607/14ab50fbc4b0595es.jpg", "http://i2.kiimg.com/599607/ad5279f2d433082es.jpg", "http://i2.kiimg.com/599607/5246515921f1e37es.jpg", "http://i2.kiimg.com/599607/5b97e2cfaefe5e1cs.jpg","http://i2.kiimg.com/599607/6ae255403de409d4s.png"],
+    bannerOriginalImages: ["http://i4.piimg.com/599607/f888c69f6d478aee.jpg", 
+      "http://i4.piimg.com/599607/f2d19660169cd36f.jpg", "http://i2.kiimg.com/599607/96633e3dd0d8b693.jpg", "http://i4.piimg.com/599607/14ab50fbc4b0595e.jpg", "http://i2.kiimg.com/599607/ad5279f2d433082e.jpg", "http://i2.kiimg.com/599607/5246515921f1e37e.jpg", "http://i2.kiimg.com/599607/5b97e2cfaefe5e1c.jpg","http://i2.kiimg.com/599607/6ae255403de409d4.png"],
     vips: [{
       color:"#cbcbff",
       image: "http://i2.kiimg.com/599607/5d2449359bc7c51c.png",
@@ -111,13 +113,13 @@ Page({
       subTitle: "享受洗澡美容8折优惠，商品9折优惠"
     }],
     notices: [{
-      origin: "http://i4.piimg.com/599607/5d13c9c05ba39927.jpg",
-      image: "http://i4.piimg.com/599607/5d13c9c05ba39927t.jpg",
+      origin: "http://i2.kiimg.com/599607/a729729f18969f18.jpg",
+      image: "http://i2.kiimg.com/599607/a729729f18969f18t.jpg",
       title: "买比瑞吉狗粮猫粮小包满100元",
       subTitle: "赠送价值20元高端零食！"
     }, {
-      origin: "http://i4.piimg.com/599607/b7013f50074a3dab.jpg",
-      image: "http://i4.piimg.com/599607/b7013f50074a3dabt.jpg",
+        origin: "http://i4.piimg.com/599607/049742638e24fe18.jpg",
+        image: "http://i4.piimg.com/599607/049742638e24fe18t.jpg",
       title: "买比瑞吉狗粮猫粮大包满300元",
       subTitle: "赠送价值80元高端零食+专用储粮桶！"
     }, {

@@ -67,6 +67,10 @@
   color:#f8c228;
 }
 
+.tab-item-text {
+  width: 165rpx;
+}
+
 .text-vertical-middle-wrapper{
   display:table-cell;
   vertical-align:middle;
@@ -92,7 +96,7 @@
 .vip-levels {
   padding-top: 5rpx;
   padding-bottom: 5rpx;
-  height: 410rpx;
+  height: 420rpx;
   background-color: #474443;
 }
 
@@ -108,6 +112,7 @@
 .vip-promote{
   float: left;
   width: 100rpx;
+  height: 100%;
 }
 
 .vip-promote-text{
