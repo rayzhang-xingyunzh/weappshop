@@ -1,0 +1,14 @@
+@import '/templates/promotionCell/promotionCell.wxss';
+@import '/templates/vipCell/vipCell.wxss';
+
+
+page{
+  height: 100%;
+  overflow-x: visible; 
+  font-size: 16px;
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+
+.page{
+  height: 100%;
+}
