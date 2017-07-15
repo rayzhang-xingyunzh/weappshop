@@ -5,7 +5,7 @@
   <scroll-view scroll-y="true" class="scroll-area">
     <!--<view class="page">-->
     <view class="images-panel">
-      <swiper autoplay="true" catchtap="showImages" indicator-dots="true">
+      <swiper autoplay="true" bindchange="swiperChanged" catchtap="showImages" indicator-dots="true">
         <block wx:for="{{bannerImages}}" wx:key="item">
           <swiper-item>
             <image class="img-swiper-item" mode="aspectFill" src="{{item}}"></image>
@@ -91,10 +91,11 @@
         </view>
       </view>
       <view class="info-wechat info-basic-right ">
-        <image src="/src/images/wechat.png " catchtap="showCode"></image>
+        <image mode="aspectFit" src="/src/images/wechat.png " catchtap="showCode"></image>
       </view>
-      <view class="info-phone info-basic-right ">
-        <image src="/src/images/phone.png " catchtap="phoneCall"></image>
+      <view class="info-phone info-basic-right">
+        <image mode="aspectFit" src="/src/images/phone.png" catchtap="phoneCall"></image>
+        <image mode="aspectFit" class="allday" src="/src/images/24h.png"></image>
       </view>
 
     </view>

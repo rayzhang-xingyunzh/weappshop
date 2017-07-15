@@ -165,7 +165,9 @@
 
 .info-logo{
   width: 100rpx;
-  margin: 20rpx;
+  margin-top: 25rpx;
+  margin-left: 20rpx;
+  margin-right:20rpx;
 }
 
 .info-logo image{
@@ -196,10 +198,16 @@
 }
 
 .info-phone image,.info-wechat image{
+  float: left;
   margin-top:25%;
   margin-left: 25%;
   height: 50%;
   width: 50%;
+}
+
+.allday{
+  margin-top:-6% !important;
+  height: 30rpx !important;
 }
 
 .info-wechat{
