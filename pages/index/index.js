@@ -4,9 +4,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.getExtConfig({
 
-    })
   },
 
   /**
@@ -73,11 +71,19 @@ Page({
 
   showImages: function () {
     wx.previewImage({
+      current: this.data.bannerOriginalImages[this.data.currentBannerIndex],
       urls: this.data.bannerOriginalImages,
     })
   },
 
-  showImage: function (event) {
+  swiperChanged:function(event){
+    var current = event.detail.current
+    this.setData({
+      currentBannerIndex:current
+    })
+  }
+
+  ,showImage: function (event) {
     wx.previewImage({
       urls: [event.currentTarget.dataset.origin],
     })
@@ -87,10 +93,25 @@ Page({
  * 页面的初始数据
  */
   , data: {
-    bannerImages: ["http://i4.piimg.com/599607/f888c69f6d478aees.jpg", 
-      "http://i4.piimg.com/599607/f2d19660169cd36fs.jpg", "http://i2.kiimg.com/599607/96633e3dd0d8b693s.jpg", "http://i4.piimg.com/599607/14ab50fbc4b0595es.jpg", "http://i2.kiimg.com/599607/ad5279f2d433082es.jpg", "http://i2.kiimg.com/599607/5246515921f1e37es.jpg", "http://i2.kiimg.com/599607/5b97e2cfaefe5e1cs.jpg","http://i2.kiimg.com/599607/6ae255403de409d4s.png"],
-    bannerOriginalImages: ["http://i4.piimg.com/599607/f888c69f6d478aee.jpg", 
-      "http://i4.piimg.com/599607/f2d19660169cd36f.jpg", "http://i2.kiimg.com/599607/96633e3dd0d8b693.jpg", "http://i4.piimg.com/599607/14ab50fbc4b0595e.jpg", "http://i2.kiimg.com/599607/ad5279f2d433082e.jpg", "http://i2.kiimg.com/599607/5246515921f1e37e.jpg", "http://i2.kiimg.com/599607/5b97e2cfaefe5e1c.jpg","http://i2.kiimg.com/599607/6ae255403de409d4.png"],
+    currentBannerIndex:0,
+    bannerImages: ["http://i2.kiimg.com/599607/9662acabeca0acb6s.jpg",
+      "http://i2.kiimg.com/599607/01903977571d49aes.jpg",
+      "http://i2.kiimg.com/599607/c9b8876139d10770s.jpg",
+      "http://i2.kiimg.com/599607/70aff178d52b9c30s.jpg",
+      "http://i2.kiimg.com/599607/bb3e4c2e9b96fb95s.jpg",
+      "http://i2.kiimg.com/599607/314486c0022f4269s.jpg",
+      "http://i2.kiimg.com/599607/76b6cba3b8e35f97s.jpg",
+      "http://i2.kiimg.com/599607/dc563159a89cc4bfs.jpg",
+      "http://i2.kiimg.com/599607/18975c417c8da624s.jpg"],
+    bannerOriginalImages: ["http://i2.kiimg.com/599607/9662acabeca0acb6.jpg",
+    "http://i2.kiimg.com/599607/01903977571d49ae.jpg",
+    "http://i2.kiimg.com/599607/c9b8876139d10770.jpg",
+    "http://i2.kiimg.com/599607/70aff178d52b9c30.jpg",
+    "http://i2.kiimg.com/599607/bb3e4c2e9b96fb95.jpg",
+    "http://i2.kiimg.com/599607/314486c0022f4269.jpg",
+    "http://i2.kiimg.com/599607/76b6cba3b8e35f97.jpg",
+    "http://i2.kiimg.com/599607/dc563159a89cc4bf.jpg",
+    "http://i2.kiimg.com/599607/18975c417c8da624.jpg"],
     vips: [{
       color:"#cbcbff",
       image: "http://i2.kiimg.com/599607/5d2449359bc7c51c.png",
@@ -175,8 +196,7 @@ Page({
       name: '曼果宠物'
     },
     tabSelectedIndex: 0,
-    openTime: '9:00-21:00',
-    tabsHeight: 450
+    openTime: '9:30-22:00'
   }
 
 })
