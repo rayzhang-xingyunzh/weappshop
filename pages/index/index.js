@@ -134,28 +134,28 @@ Page({
       subTitle: "享受洗澡美容8折优惠，商品9折优惠"
     }],
     notices: [{
-      origin: "http://i2.kiimg.com/599607/a729729f18969f18.jpg",
-      image: "http://i2.kiimg.com/599607/a729729f18969f18t.jpg",
+      origin: "http://i1.buimg.com/599607/a729729f18969f18.jpg",
+      image: "http://i1.buimg.com/599607/a729729f18969f18t.jpg",
       title: "买比瑞吉狗粮猫粮小包满100元",
       subTitle: "赠送价值20元高端零食！"
     }, {
-        origin: "http://i4.piimg.com/599607/049742638e24fe18.jpg",
-        image: "http://i4.piimg.com/599607/049742638e24fe18t.jpg",
+        origin: "http://i1.buimg.com/599607/049742638e24fe18.jpg",
+        image: "http://i1.buimg.com/599607/049742638e24fe18t.jpg",
       title: "买比瑞吉狗粮猫粮大包满300元",
       subTitle: "赠送价值80元高端零食+专用储粮桶！"
     }, {
-      origin: "http://i2.kiimg.com/599607/1d62a752430b2b05.png",
-      image: "http://i2.kiimg.com/599607/1d62a752430b2b05t.jpg",
+        origin: "http://i1.buimg.com/599607/1d62a752430b2b05.jpg",
+      image: "http://i1.buimg.com/599607/1d62a752430b2b05t.jpg",
       title: "买耐吉斯狗粮",
       subTitle: "送麦德氏超浓缩卵磷脂150G一盒！"
     }, {
-      origin: "http://i4.piimg.com/599607/ae8e25c823b3ee1b.jpg",
-      image: "http://i4.piimg.com/599607/ae8e25c823b3ee1bt.jpg",
+        origin: "http://i1.buimg.com/599607/ae8e25c823b3ee1b.jpg",
+      image: "http://i1.buimg.com/599607/ae8e25c823b3ee1bt.jpg",
       title: "grest犬猫综合营养膏",
       subTitle: "买二送一"
     }, {
-      origin: "http://i2.kiimg.com/599607/bc88dd1fb5aa5898.png",
-      image: "http://i2.kiimg.com/599607/bc88dd1fb5aa5898t.jpg",
+        origin: "http://i1.buimg.com/599607/bc88dd1fb5aa5898.jpg",
+      image: "http://i1.buimg.com/599607/bc88dd1fb5aa5898t.jpg",
       title: "转发文字及图片集满38个赞",
       subTitle: "送比瑞吉500g狗粮！"
     }],
@@ -188,7 +188,7 @@ Page({
     englishName: "Mango's Pet",
     name: "曼果宠物乐园",
     codeUrl: 'http://i2.kiimg.com/599607/ad5279f2d433082e.jpg',
-    phoneNumber: "18502794699",
+    phoneNumber: "18627777872",
     location: {
       address: '武汉市武昌区宝通寺路百瑞景一期1-6商铺',
       latidude: 30.51974,
