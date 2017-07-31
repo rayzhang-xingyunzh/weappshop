@@ -6,8 +6,10 @@
 
 .images-panel{
   height:350rpx;
-  background-image: url(http://i1.buimg.com/599607/82da9313f7d3b08b.png);
+  background-image: url(http://puppypet-1254063725.picsh.myqcloud.com/puppyPetColumn.png);
   background-size: 100% 100%;
+  margin-left: 7rpx;
+  margin-top: 7rpx;
 }
 
 .images-panel swiper{
@@ -24,21 +26,27 @@
 
 .tab-panel{
   width: 100%;
-  /*min-height: 200rpx;*/
   height: auto;
-  /*overflow:hidden;*/
 }
 
 .tabbar{
-  background-color: #474443;
-  height: 70rpx;
-  padding-top:10rpx;
-  padding-right: 6rpx;
-  padding-left: 6rpx;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.tabbar-panel{
+  position: fixed;
+  width: 100%;
+  bottom:22.5%;
+  height:80rpx;
 }
 
 .tabbar-item{
-  padding-right:10rpx;
+  height: 100%;
+  float:left;
+  margin-left: 7rpx;
+/*  padding-right:10rpx;
   padding-left:10rpx; 
   font-size: 35rpx;
   height: 100%;
@@ -49,22 +57,23 @@
   width: 210rpx;
   text-align: center;
   display: table;
+*/
 }
 
 .tabbar-item image{
   height: 100%;
-  width: 45rpx;
+  width: 180rpx;
   /*margin-right:5rpx; */
 }
 
 .tabbar-item-selected{
-  background-color: #f8c228;
-  color:#5f5d5d;
+  background-color: white;
+  color:white;
 }
 
 .tabbar-item-normal{
-  background-color: #5f5d5d;
-  color:#f8c228;
+  background-color: white;
+  color:white;
 }
 
 .tab-item-text {
@@ -86,7 +95,7 @@
 }
 
 .tab-promotion{
-  background: linear-gradient(to bottom,#f8c328,#ed9e29);
+  background-color: white;
 }
 
 .tab-combos{
@@ -106,7 +115,12 @@
 }
 
 .vip-benefit{
-  height: 200rpx;
+  height: 500rpx;
+  background-image: url(http://puppypet-1254063725.picsh.myqcloud.com/contentColumn.png);
+  background-size: 100% 100%;
+  margin-left: 7rpx;
+  margin-right: 7rpx
+
 }
 
 .vip-promote{
@@ -143,66 +157,86 @@
 }
 
 .tab{
-  background-color: #474443;
+  background-color: white;
   /*padding-top: 10rpx;*/
   min-height:600rpx;
 }
 
 .info-panel{
-  background-color: #474443;
+  background-color: white;
   color: white;
   height: 22.5%;
   position: fixed;
   bottom:0;
   width: 100%;
+  margin-left: 7rpx;
+}
+.info-basic-root{
+  height: 150rpx;
+  width: 100%;
+  background-color: white;
 }
 
 .info-basic-group{
-  height: 56%;
+  height: 150rpx;
   width: 100%;
-  background: linear-gradient(to bottom,#f8c328,#ed9e29);
+  background-color: white;
+  position: fixed;
+}
+
+.info-basic-logo{
+  height: 150rpx;
+  width: 60%;
+  background-image: url(http://puppypet-1254063725.picsh.myqcloud.com/storeNameColumn.png);
+  background-color: white;
+  background-size: 100% 100%;
+  position: fixed;
+  float: left;
 }
 
 .info-logo{
-  width: 100rpx;
+  width: 180rpx;
   margin-top: 25rpx;
   margin-left: 20rpx;
-  margin-right:20rpx;
+  margin-right:10rpx;
+  float: left;
 }
 
 .info-logo image{
-  width: 100rpx;
+  width: 180rpx;
   height: 100rpx;
+  float: left;
 }
 
 .info-name-group{
-  padding-top: 20rpx;
-  width: 302rpx;
+  padding-top: 25rpx;
+  width: 450rpx;
   color: black;
-  border-right:#f2b028 solid 2rpx;
 }
 
 .info-name-chinese{
-  font-size: 40rpx;
+  font-size: 27rpx;
 }
 
 .info-name-english{
-  font-size: 35rpx;
+  font-size: 25rpx;
+  margin-top: 5rpx;
+}
+
+.info-name-nickName{
+  font-size: 20rpx;
+  margin-top: 5rpx;
 }
 
 .info-phone{
   height: 100%;
-  width: 148rpx;
-  border-right:#f2b028 solid 2rpx;
-  border-left:#f8c33a solid 2rpx;
+  width: 19%;
 }
 
 .info-phone image,.info-wechat image{
   float: left;
-  margin-top:25%;
-  margin-left: 25%;
-  height: 50%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
 }
 
 .allday{
@@ -211,9 +245,9 @@
 }
 
 .info-wechat{
-  width: 150rpx;
+  width: 20%;
   height: 100%;
-  border-left:#f8c33a solid 2rpx;
+  margin-right: 7rpx;
 }
 
 .info-basic{
@@ -225,15 +259,13 @@
 }
 
 .info-location{
-  border-width: 2rpx;
-  border-bottom-style: solid;
-  border-color: #3a3835;
-  padding-left:10rpx;
-  padding-right: 10rpx; 
-  height: 24%;
+  background-image: url(http://puppypet-1254063725.picsh.myqcloud.com/addressColumn.png);
+  background-size: 100% 100%;
+  height: 25%;
   display: table;
   font-size: 28rpx;
   width: 100%;
+  background-color: white;
 }
 
 .info-location image{

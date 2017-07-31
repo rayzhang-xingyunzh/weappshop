@@ -185,8 +185,9 @@ Page({
       title: "萌宠创意造型",
       subTitle: "（10斤内）128元！"
     }],
-    englishName: "Mango's Pet",
-    name: "曼果宠物乐园",
+    englishName: "Puppy pet hotel",
+    name: "狗狗大人 宠物酒店",
+    nickName:"宠物·酒店",
     codeUrl: 'http://i2.kiimg.com/599607/ad5279f2d433082e.jpg',
     phoneNumber: "18627777872",
     location: {
