@@ -1,7 +1,7 @@
 
 
 .scroll-area{
-  height: 77.5%;
+  height: 70%;
 }
 
 .images-panel{
@@ -39,7 +39,7 @@
   position: fixed;
   width: 100%;
   bottom:22.5%;
-  height:80rpx;
+  height:7.5%;
 }
 
 .tabbar-item{
@@ -172,7 +172,7 @@
   margin-left: 7rpx;
 }
 .info-basic-root{
-  height: 150rpx;
+  height: 58%;
   width: 100%;
   background-color: white;
 }
@@ -211,7 +211,7 @@
 .info-name-group{
   padding-top: 25rpx;
   width: 450rpx;
-  color: black;
+  color: white;
 }
 
 .info-name-chinese{
@@ -261,17 +261,18 @@
 .info-location{
   background-image: url(http://puppypet-1254063725.picsh.myqcloud.com/addressColumn.png);
   background-size: 100% 100%;
-  height: 25%;
+  height: 42%;
   display: table;
   font-size: 28rpx;
   width: 100%;
   background-color: white;
+  margin-right: 7rpx;
 }
 
 .info-location image{
   float: left;
   height: 100%;
-  width: 30rpx;
+  width: 50rpx;
   margin-right:15rpx;
   margin-left: 10rpx;
 }
@@ -280,17 +281,18 @@
   display: table;
   /*width: 650rpx;*/
   float: left;
-  height: 100%;
+  height: 50%;
 }
 
 .right-arrow{
   /*display: table;*/
   float: right;
-  height: 100%;
-  width: 100rpx;
+  height: 50%;
+  width: 50rpx;
   /*text-align: center;*/
   /*font-size: 1.5em;*/
   color:#ffb80b;
+  margin-right: 20rpx;
 }
 
 .right-arrow image{
@@ -299,23 +301,20 @@
 }
 
 .info-open-time{
-  border-width: 2rpx;
-  border-top-style: solid;
-  border-color: #585755;
   display: table;
   width: 100%;
   font-size:28rpx;
   padding-left: 10rpx;
   padding-right:10rpx;
-  height:22%;
+  height:40%;
 }
 
 .info-open-time image{
   float: left;
   height: 100%;
-  width: 30rpx;
+  width: 50rpx;
   margin-right:15rpx;
-  margin-left: 10rpx;
+  margin-left: 1rpx;
 }
 
 .info-open-time-left{
