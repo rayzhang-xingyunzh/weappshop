@@ -1,7 +1,7 @@
 
 
 .scroll-area{
-  height: 77.5%;
+  height: 75%;
 }
 
 .images-panel{
@@ -96,6 +96,26 @@
   background-color: white;
 }
 
+.tab-background-top{
+  height: 30rpx;
+}
+
+.tab-background-top image{
+  height: 30rpx;
+  width: 98.5%;
+  margin-left: 7rpx;
+}
+
+.tab-background-bottom{
+  height: 30rpx;
+}
+
+.tab-background-bottom image{
+  height: 30rpx;
+  width: 98.5%;
+  margin-left: 7rpx;
+}
+
 .tab-combos{
   background-color: #474443;
 }
@@ -113,9 +133,10 @@
 }
 
 .vip-benefit{
-  height: 500rpx;
-  background-image: url(http://puppypet-1254063725.picsh.myqcloud.com/contentColumn.png);
+  height: 600rpx;
+  background-image: url(http://puppypet-1254063725.cossh.myqcloud.com/tab_background_middle.png);
   background-size: 100% 100%;
+  background-repeat: repeat-y;
   margin-left: 7rpx;
   margin-right: 7rpx
 

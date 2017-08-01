@@ -41,9 +41,9 @@
         </view>
 -->
         <view class="{{tabSelectedIndex == 0?'show':'hide'}} tab-promotion tab">
-
-          <!-- images-panel end -->
-
+          <view class="tab-background-top">
+             <image mode="aspectFit" src="/src/images/tab_background_top.png" />
+          </view>
           <view class="vip-benefit">
             <image mode="aspectFit" src="" />
             <view class="benefit-text"></view>
@@ -75,7 +75,9 @@
     </view>
     <!-- tab-panel end -->
   </scroll-view>
-
+  <view class="tab-background-bottom">
+  <image mode="aspectFit" src="/src/images/tab_background_bottom.png" />
+  </view>
   <view class="info-panel">
     <view class="info-basic-root">
       <view class="info-basic-group">
