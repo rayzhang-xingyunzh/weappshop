@@ -37,7 +37,6 @@
 
 .tabbar-panel{
   width: 100%;
-  bottom:22.5%;
   height:80rpx;
 }
 
@@ -177,40 +176,39 @@
 }
 
 .info-basic-group{
-  height: 150rpx;
+  height: 160rpx;
   width: 100%;
   background-color: white;
   position: fixed;
 }
 
 .info-basic-logo{
-  height: 150rpx;
+  height: 100%;
   width: 60%;
   background-image: url(http://puppypet-1254063725.picsh.myqcloud.com/storeNameColumn.png);
   background-color: white;
   background-size: 100% 100%;
-  position: fixed;
   float: left;
 }
 
 .info-logo{
-  width: 180rpx;
+  width: 40%;
   margin-top: 25rpx;
   margin-left: 20rpx;
-  margin-right:10rpx;
+  margin-right:7rpx;
   float: left;
 }
 
 .info-logo image{
-  width: 180rpx;
-  height: 100rpx;
-  float: left;
+  width: 100%;
+  height: 110rpx;
 }
 
 .info-name-group{
   padding-top: 25rpx;
-  width: 450rpx;
-  color: white;
+  width: 100%;
+  color: #784a4f;
+  font-weight: bold;
 }
 
 .info-name-chinese{
@@ -219,17 +217,18 @@
 
 .info-name-english{
   font-size: 25rpx;
-  margin-top: 5rpx;
+  margin-top: 7rpx;
 }
 
 .info-name-nickName{
   font-size: 20rpx;
-  margin-top: 5rpx;
+  margin-top: 7rpx;
 }
 
 .info-phone{
   height: 100%;
   width: 19%;
+  margin-right: 5rpx;
 }
 
 .info-phone image,.info-wechat image{
@@ -244,9 +243,9 @@
 }
 
 .info-wechat{
-  width: 20%;
+  width: 19%;
   height: 100%;
-  margin-right: 7rpx;
+  margin-right: 10rpx;
 }
 
 .info-basic{
@@ -259,21 +258,22 @@
 
 .info-location{
   background-image: url(http://puppypet-1254063725.picsh.myqcloud.com/addressColumn.png);
-  background-size: 100% 100%;
+  background-size: 99% 100%;
+  background-repeat: no-repeat;
   height: 42%;
   display: table;
-  font-size: 28rpx;
+  font-size: 27rpx;
   width: 100%;
   background-color: white;
-  margin-right: 7rpx;
+  color: #784a4f;
 }
 
 .info-location image{
   float: left;
   height: 100%;
   width: 50rpx;
-  margin-right:15rpx;
-  margin-left: 10rpx;
+  margin-right:20rpx;
+  margin-left: 20rpx;
 }
 
 .info-location-left{
@@ -284,27 +284,20 @@
 }
 
 .right-arrow{
-  /*display: table;*/
   float: right;
   height: 50%;
-  width: 50rpx;
-  /*text-align: center;*/
-  /*font-size: 1.5em;*/
   color:#ffb80b;
-  margin-right: 20rpx;
+  margin-right: 30rpx;
 }
 
 .right-arrow image{
   height: 100%;
-  width: 35rpx;
+  width: 25rpx;
 }
 
 .info-open-time{
   display: table;
   width: 100%;
-  font-size:28rpx;
-  padding-left: 10rpx;
-  padding-right:10rpx;
   height:40%;
 }
 
@@ -312,17 +305,15 @@
   float: left;
   height: 100%;
   width: 50rpx;
-  margin-right:15rpx;
-  margin-left: 1rpx;
+  margin-right:20rpx;
+  margin-left: 20rpx;
 }
 
 .info-open-time-left{
    display: table;
-  /*width: 650rpx;*/
   float: left;
   height: 100%;
 }
-
 
 .show{
   display: block;
