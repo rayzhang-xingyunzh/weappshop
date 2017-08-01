@@ -16,16 +16,16 @@
       <view class="tabbar-panel">
     <view class="tabbar">
       <view class="{{tabSelectedIndex == 0?'tabbar-item-selected':'tabbar-item-normal'}} tabbar-item" data-tabid="0" catchtap="selectTab">
-        <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 0?'labela.png':'label1.png'}}" />
+        <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 0?'introductionS.png':'introduction.png'}}" />
       </view>
       <view class="{{tabSelectedIndex == 1?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="1" catchtap="selectTab">
-        <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 1?'labelb.png':'label2.png'}}" />
+        <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 1?'hotelS.png':'hotel.png'}}" />
       </view>
       <view class="{{tabSelectedIndex == 2?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="2" catchtap="selectTab">
-        <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 2?'labelc.png':'label3.png'}}" />
+        <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 2?'petBeautifyS.png':'petBeautify.png'}}" />
       </view>
       <view class="{{tabSelectedIndex == 3?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="3" catchtap="selectTab">
-        <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 3?'labeld.png':'label4.png'}}" />
+        <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 3?'salePetS.png':'salePet.png'}}" />
       </view>
     </view>
     <!-- tabbar end -->
@@ -76,14 +76,12 @@
     <!-- tab-panel end -->
   </scroll-view>
 
-
-
   <view class="info-panel">
     <view class="info-basic-root">
       <view class="info-basic-group">
         <view class="info-basic-logo ">
           <view class="info-logo ">
-            <image src="/src/images/logo.png"></image>
+            <image mode="aspectFit" src="/src/images/logo.png"></image>
           </view>
           <view class="info-name-group ">
             <view class="info-name-chinese ">
@@ -99,10 +97,10 @@
         </view>
         <!-- info-basic-logo end -->
         <view class="info-wechat info-basic-right ">
-          <image mode="aspectFit" src="/src/images/wx.png " catchtap="showCode"></image>
+          <image mode="aspectFit" src="/src/images/phone.png " catchtap="showCode"></image>
         </view>
         <view class="info-phone info-basic-right">
-          <image mode="aspectFit" src="/src/images/phone.png" catchtap="phoneCall"></image>
+          <image mode="aspectFit" src="/src/images/wx.png" catchtap="phoneCall"></image>
         </view>
       </view>
       <!-- info-basic-group end -->

@@ -191,10 +191,10 @@ Page({
     codeUrl: 'http://i2.kiimg.com/599607/ad5279f2d433082e.jpg',
     phoneNumber: "18627777872",
     location: {
-      address: '武汉市武昌区宝通寺路百瑞景一期1-6商铺',
+      address: '湖北省武汉市武昌区杨园街',
       latidude: 30.51974,
       longitude: 114.33411,
-      name: '曼果宠物'
+      name: '狗狗大人 宠物酒店'
     },
     tabSelectedIndex: 0,
     openTime: '9:30-22:00'
