@@ -1,21 +1,9 @@
 <!--index.wxml-->
 <import src="/templates/promotionCell/promotionCell.wxml" />
-<import src="/templates/vipCell/vipCell.wxml"/>
+<import src="/templates/vipCell/vipCell.wxml" />
 <view class="page">
   <scroll-view scroll-y="true" class="scroll-area">
-    <!--<view class="page">-->
-    <view class="tab-panel">
-      <view class="tabs">
-<!--
-        <view class="{{tabSelectedIndex == 1?'show':'hide'}} tab-notice tab">
-          <block wx:for="{{notices}}">
-            <template is="promotionCell{{index%2==0?'Even':'Odd'}}" data="{{...item}}"></template>
-          </block>
-        </view>
--->
-    <view class="{{tabSelectedIndex == 0?'show':'hide'}} tab-promotion tab">
-
-      <view class="images-panel">
+    <view class="images-panel">
       <swiper autoplay="true" bindchange="swiperChanged" catchtap="showImages" indicator-dots="true" circular="true">
         <block wx:for="{{bannerImages}}" wx:key="item">
           <swiper-item>
@@ -23,14 +11,46 @@
           </swiper-item>
         </block>
       </swiper>
-      </view> <!-- images-panel end -->
- 
-      <view class="vip-benefit">
-        <image mode="aspectFit" src="" />
-          <view class="benefit-text"></view>
-      </view> <!-- vip-benefit end -->
+    </view>
+    <!--<view class="page">-->
+      <view class="tabbar-panel">
+    <view class="tabbar">
+      <view class="{{tabSelectedIndex == 0?'tabbar-item-selected':'tabbar-item-normal'}} tabbar-item" data-tabid="0" catchtap="selectTab">
+        <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 0?'labela.png':'label1.png'}}" />
+      </view>
+      <view class="{{tabSelectedIndex == 1?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="1" catchtap="selectTab">
+        <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 1?'labelb.png':'label2.png'}}" />
+      </view>
+      <view class="{{tabSelectedIndex == 2?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="2" catchtap="selectTab">
+        <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 2?'labelc.png':'label3.png'}}" />
+      </view>
+      <view class="{{tabSelectedIndex == 3?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="3" catchtap="selectTab">
+        <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 3?'labeld.png':'label4.png'}}" />
+      </view>
+    </view>
+    <!-- tabbar end -->
+  </view>
+  <!-- tabbar-panel end -->
+    <view class="tab-panel">
+      <view class="tabs">
+        <!--
+        <view class="{{tabSelectedIndex == 1?'show':'hide'}} tab-notice tab">
+          <block wx:for="{{notices}}">
+            <template is="promotionCell{{index%2==0?'Even':'Odd'}}" data="{{...item}}"></template>
+          </block>
+        </view>
+-->
+        <view class="{{tabSelectedIndex == 0?'show':'hide'}} tab-promotion tab">
 
-<!--
+          <!-- images-panel end -->
+
+          <view class="vip-benefit">
+            <image mode="aspectFit" src="" />
+            <view class="benefit-text"></view>
+          </view>
+          <!-- vip-benefit end -->
+
+          <!--
       <view class="vip-levels">
         <view class="vip-promote">
           <view class="vip-promote-text">会员招募</view>
@@ -41,62 +61,53 @@
           </block>
         </view>
       </view>
--->     
-    </view> <!-- tabSelectedIndex == 0 end -->
+-->
+        </view>
+        <!-- tabSelectedIndex == 0 end -->
 
-    <view class="{{tabSelectedIndex == 2? 'show': 'hide'}} tab-combos tab">
-<!-- <block wx:for="{{combos}}">
+        <view class="{{tabSelectedIndex == 2? 'show': 'hide'}} tab-combos tab">
+          <!-- <block wx:for="{{combos}}">
         <template is="promotionCell{{index%2==0? 'Even':'Odd'}}" data="{{...item}}"></template>
       </block> -->
+        </view>
+      </view>
+      <!-- tabs end -->
     </view>
-   </view> <!-- tabs end -->
-  </view>  <!-- tab-panel end -->
+    <!-- tab-panel end -->
   </scroll-view>
-  
-  <view class="tabbar-panel">
-    <view class="tabbar">
-        <view class="{{tabSelectedIndex == 0?'tabbar-item-selected':'tabbar-item-normal'}} tabbar-item" data-tabid="0" catchtap="selectTab">
-          <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 0?'labela.png':'label1.png'}}" />
-        </view>
-        <view class="{{tabSelectedIndex == 1?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="1" catchtap="selectTab">
-          <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 1?'labelb.png':'label2.png'}}" />
-        </view>
-        <view class="{{tabSelectedIndex == 2?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="2" catchtap="selectTab">
-          <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 2?'labelc.png':'label3.png'}}" />
-        </view>
-        <view class="{{tabSelectedIndex == 3?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="3" catchtap="selectTab">
-          <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 3?'labeld.png':'label4.png'}}" />
-        </view>
-      </view> <!-- tabbar end -->
-  </view>  <!-- tabbar-panel end -->
+
+
 
   <view class="info-panel">
-   <view class="info-basic-root">
-    <view class="info-basic-group">
-     <view class="info-basic-logo ">
-      <view class="info-logo ">
-        <image src="/src/images/logo.png"></image>
-      </view>
-      <view class="info-name-group ">
-        <view class="info-name-chinese ">
-          {{name}}
+    <view class="info-basic-root">
+      <view class="info-basic-group">
+        <view class="info-basic-logo ">
+          <view class="info-logo ">
+            <image src="/src/images/logo.png"></image>
+          </view>
+          <view class="info-name-group ">
+            <view class="info-name-chinese ">
+              {{name}}
+            </view>
+            <view class="info-name-english ">
+              {{englishName}}
+            </view>
+            <view class="info-name-nickName ">
+              {{nickName}}
+            </view>
+          </view>
         </view>
-        <view class="info-name-english ">
-          {{englishName}}
+        <!-- info-basic-logo end -->
+        <view class="info-wechat info-basic-right ">
+          <image mode="aspectFit" src="/src/images/wx.png " catchtap="showCode"></image>
         </view>
-        <view class="info-name-nickName ">
-          {{nickName}}
+        <view class="info-phone info-basic-right">
+          <image mode="aspectFit" src="/src/images/phone.png" catchtap="phoneCall"></image>
         </view>
       </view>
-     </view> <!-- info-basic-logo end -->
-      <view class="info-wechat info-basic-right ">
-        <image mode="aspectFit" src="/src/images/wx.png " catchtap="showCode"></image>
-      </view>
-      <view class="info-phone info-basic-right">
-        <image mode="aspectFit" src="/src/images/phone.png" catchtap="phoneCall"></image>
-      </view>
-     </view> <!-- info-basic-group end -->
-    </view> <!-- info-basic-root end -->
+      <!-- info-basic-group end -->
+    </view>
+    <!-- info-basic-root end -->
     <view class="info-location " catchtap="showLocation">
       <view class="info-location-left ">
         <image mode="aspectFit" src="/src/images/address.png"></image>
@@ -108,14 +119,18 @@
         <image mode="aspectFit" src="/src/images/addressArrow.png "></image>
       </view>
 
-    <view class="info-open-time ">
-      <view class="info-open-time-left ">
-        <image mode="aspectFit" src="/src/images/time.png "></image>
-        <view class="text-vertical-middle-wrapper ">
-          {{openTime}}
+      <view class="info-open-time ">
+        <view class="info-open-time-left ">
+          <image mode="aspectFit" src="/src/images/time.png "></image>
+          <view class="text-vertical-middle-wrapper ">
+            {{openTime}}
+          </view>
         </view>
       </view>
-    </view> <!-- info-open-time end -->
-  </view> <!-- info-location end -->
-  </view> <!-- info-panel end -->
-</view> <!-- page end -->
+      <!-- info-open-time end -->
+    </view>
+    <!-- info-location end -->
+  </view>
+  <!-- info-panel end -->
+</view>
+<!-- page end -->

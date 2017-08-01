@@ -1,7 +1,7 @@
 
 
 .scroll-area{
-  height: 70%;
+  height: 77.5%;
 }
 
 .images-panel{
@@ -36,10 +36,9 @@
 }
 
 .tabbar-panel{
-  position: fixed;
   width: 100%;
   bottom:22.5%;
-  height:7.5%;
+  height:80rpx;
 }
 
 .tabbar-item{
