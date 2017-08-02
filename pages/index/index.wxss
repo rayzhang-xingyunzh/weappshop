@@ -88,13 +88,6 @@
   height: auto;
 }
 
-.tab-notice{
-  background-color: #f8c228;
-}
-
-.tab-promotion{
-  background-color: white;
-}
 
 .tab-background-top{
   height: 30rpx;
@@ -102,83 +95,33 @@
 
 .tab-background-top image{
   height: 30rpx;
-  width: 98.5%;
-  margin-left: 7rpx;
+  width: 100%;
 }
 
 .tab-background-bottom{
   height: 30rpx;
+  margin-right: 7rpx;
+  margin-left: 7rpx;
 }
 
 .tab-background-bottom image{
   height: 30rpx;
-  width: 98.5%;
-  margin-left: 7rpx;
+  width: 100%;
 }
 
-.tab-combos{
-  background-color: #474443;
-}
-
-.vip-levels {
-  padding-top: 5rpx;
-  padding-bottom: 5rpx;
-  height: 420rpx;
-  background-color: #474443;
-}
-
-.vip-levels-content{
-  float:left;
-  width: 650rpx;
-}
-
-.vip-benefit{
+.tab-content{
   height: 600rpx;
   background-image: url(http://puppypet-1254063725.cossh.myqcloud.com/tab_background_middle.png);
-  background-size: 100% 100%;
+  background-size: 100% auto;
   background-repeat: repeat-y;
-  margin-left: 7rpx;
-  margin-right: 7rpx
-
-}
-
-.vip-promote{
-  float: left;
-  width: 100rpx;
-  height: 100%;
-}
-
-.vip-promote-text{
-  line-height: 40rpx;
-  color: #f8c228;
-  width:40rpx;
-  word-wrap: break-word;
-  font-family: monospace;
-  margin-top:120rpx;
-  margin-right:auto;
-  margin-left:auto;
-}
-
-.vip-benefit image{
-  width: 280rpx;
-  height: 200rpx;
-  float: left;
-  margin-left: 40rpx;
-}
-
-.benefit-text{
-  float: left;
-  margin-top: 32rpx;
-  margin-left: 40rpx;
-  font-size: 23rpx;
-  line-height: 35rpx;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .tab{
   background-color: white;
   /*padding-top: 10rpx;*/
   min-height:600rpx;
+   margin-left:7rpx;
+  margin-right:7rpx; 
 }
 
 .info-panel{
@@ -249,7 +192,7 @@
 .info-phone{
   height: 100%;
   width: 19%;
-  margin-right: 5rpx;
+  margin-right: 10rpx;
 }
 
 .info-phone image,.info-wechat image{
@@ -266,7 +209,13 @@
 .info-wechat{
   width: 19%;
   height: 100%;
-  margin-right: 10rpx;
+  margin-right: 5rpx;
+}
+
+.info-wechat button{
+  float: left;
+  height: 100%;
+  width: 100%;
 }
 
 .info-basic{
