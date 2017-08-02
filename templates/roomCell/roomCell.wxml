@@ -1,0 +1,9 @@
+<template name="roomCell">
+  <view class="room">
+    <image mode="aspectFit" src="{{image}}"></image>
+    <view style="color:{{color}};" class="room-cell-text">
+      <view class="room-cell-title room-text-line">{{title}}</view>
+      <view class="room-cell-subTitle room-text-line">{{subTitle}}</view>
+    </view>
+  </view>
+</template>

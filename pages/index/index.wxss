@@ -2,6 +2,10 @@
 
 .scroll-area{
   height: 75%;
+  background-position: bottom;
+  background-image: url(http://puppypet-1254063725.cossh.myqcloud.com/tab_background_middle.png);
+  background-size: 738rpx 50%;
+  background-repeat: no-repeat;
 }
 
 .images-panel{
@@ -88,7 +92,6 @@
   height: auto;
 }
 
-
 .tab-background-top{
   height: 30rpx;
 }
@@ -99,7 +102,8 @@
 }
 
 .tab-background-bottom{
-  height: 30rpx;
+  margin-top: -4rpx;
+  height: 34rpx;
   margin-right: 7rpx;
   margin-left: 7rpx;
 }
@@ -110,7 +114,10 @@
 }
 
 .tab-content{
-  height: 600rpx;
+  padding-left: 15rpx;
+  padding-right:15rpx;
+  min-height: 600rpx;
+  height: auto;
   background-image: url(http://puppypet-1254063725.cossh.myqcloud.com/tab_background_middle.png);
   background-size: 100% auto;
   background-repeat: repeat-y;
@@ -124,15 +131,27 @@
   margin-right:7rpx; 
 }
 
+.introduction-text{
+  color: saddlebrown;
+}
+
+.markup-grid-cell{
+   float:left;
+   width:33.3%;
+   box-sizing: border-box;
+}
+
 .info-panel{
   background-color: white;
   color: white;
   height: 22.5%;
   position: fixed;
   bottom:0;
-  width: 100%;
-  margin-left: 7rpx;
+  width: 740rpx;
+  margin-left: 5rpx;
+  margin-right: 5rpx; 
 }
+
 .info-basic-root{
   height: 58%;
   width: 100%;
@@ -147,17 +166,21 @@
 }
 
 .info-basic-logo{
-  height: 100%;
-  width: 60%;
+  padding-top: 20rpx;
+  margin-top:0.5%;
+  margin-bottom: 0.5%;
+  height: 135rpx;
+  width: 450rpx;
   background-image: url(http://puppypet-1254063725.picsh.myqcloud.com/storeNameColumn.png);
   background-color: white;
   background-size: 100% 100%;
+  background-repeat: no-repeat;
   float: left;
 }
 
 .info-logo{
   width: 40%;
-  margin-top: 25rpx;
+  /* margin-top: 25rpx; */
   margin-left: 20rpx;
   margin-right:7rpx;
   float: left;
@@ -169,10 +192,10 @@
 }
 
 .info-name-group{
-  padding-top: 25rpx;
+  /* padding-top: 20rpx; */
   width: 100%;
   color: #784a4f;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .info-name-chinese{
@@ -180,13 +203,15 @@
 }
 
 .info-name-english{
-  font-size: 25rpx;
-  margin-top: 7rpx;
+  font-size: 29rpx;
+  margin-top: 10rpx;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
 .info-name-nickName{
   font-size: 20rpx;
-  margin-top: 7rpx;
+  margin-top: 10rpx;
 }
 
 .info-phone{
@@ -212,7 +237,12 @@
   margin-right: 5rpx;
 }
 
+.info-wechat button::after {
+  content:none;
+}
+
 .info-wechat button{
+  padding:0 !important; 
   float: left;
   height: 100%;
   width: 100%;
@@ -228,7 +258,7 @@
 
 .info-location{
   background-image: url(http://puppypet-1254063725.picsh.myqcloud.com/addressColumn.png);
-  background-size: 99% 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 42%;
   display: table;

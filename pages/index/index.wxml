@@ -1,6 +1,5 @@
 <!--index.wxml-->
-<import src="/templates/promotionCell/promotionCell.wxml" />
-<import src="/templates/vipCell/vipCell.wxml" />
+<import src="/templates/roomCell/roomCell.wxml" />
 <view class="page">
   <scroll-view scroll-y="true" class="scroll-area">
     <view class="images-panel">
@@ -40,7 +39,7 @@
             <image mode="aspectFit" src="/src/images/tab_background_top.png" />
           </view>
           <view class="tab-content">
-
+            <text class="introduction-text" space="emsp">{{introduction}}</text>
           </view>
 
         </view>
@@ -52,7 +51,9 @@
             <image mode="aspectFit" src="/src/images/tab_background_top.png" />
           </view>
           <view class="tab-content">
-
+            <block wx:for="{{rooms}}">
+              <template is="roomCell" data="{{...item}}"></template>
+            </block>
           </view>
         </view>
         <!--tab 1 end  -->
@@ -63,7 +64,7 @@
             <image mode="aspectFit" src="/src/images/tab_background_top.png" />
           </view>
           <view class="tab-content">
-
+            <view wx:for="{{[1,2,3,4,5,6,7,8]}}" class="markup-grid-cell">text</view>
           </view>
         </view>
         <!-- tab 2 end  -->
@@ -84,13 +85,13 @@
     <!-- tab-panel end -->
   </scroll-view>
   <view class="tab-background-bottom">
-    <image mode="aspectFit" src="/src/images/tab_background_bottom.png" />
+    <image mode="aspectFit top" src="/src/images/tab_background_bottom.png" />
   </view>
   <view class="info-panel">
     <view class="info-basic-root">
       <view class="info-basic-group">
-        <view class="info-basic-logo ">
-          <view class="info-logo ">
+        <view class="info-basic-logo">
+          <view class="info-logo">
             <image mode="aspectFit" src="/src/images/logo.png"></image>
           </view>
           <view class="info-name-group ">
@@ -110,8 +111,8 @@
           <image mode="aspectFit" src="/src/images/phone.png" catchtap="phoneCall" />
         </view>
         <view class="info-wechat info-basic-right">
-          <button open-type="share" class="wechat-button">
-            <image mode="aspectFit" src="/src/images/wx.png " catchtap="showCode"/>
+          <button open-type="contact" class="wechat-button">
+            <image mode="aspectFit" src="/src/images/wx.png "/>
           </button>
 
         </view>
