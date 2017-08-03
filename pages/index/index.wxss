@@ -167,9 +167,20 @@
 .day-care-info{
   float: left;
   height: 210rpx;
+  width: 350rpx;
+}
+
+.day-care-info-text{
+  height: 100rpx;
+  border-radius: 15rpx;
+  border: #F295A0 4rpx dashed;
+  padding:10rpx;
+  font-size: 25rpx;
+  line-height: 34rpx;
 }
 
 .day-care-price-text{
+  font-weight: lighter;
   color: white;
   width: 320rpx;
   background-color: #F6AAB3;
@@ -183,14 +194,14 @@
 .day-care-info-claw{
   width: 40rpx;
   height: 40rpx;
-  margin-top:30rpx;
-  margin-left: 15rpx;
+  /* margin-top:30rpx; */
+  margin-left: 10rpx;
 }
 
 .day-care-info-ps{
-  margin-left: 160rpx;
+  margin-left: 162rpx;
   width: 110rpx;
-  height: 80rpx;
+  height: 70rpx;
 }
 
 
@@ -204,11 +215,13 @@
   /* margin-left: 1rpx;
   margin-right: 1rpx; */
   float:left;
-  width: 90rpx;
+  width: 80rpx;
   height: 40rpx;
 }
 
 .room-label-text{
+  font-weight: lighter;
+  color: #5E1B25;
   font-size: 28rpx;
   float: left;
   line-height: 40rpx;

@@ -1,7 +1,9 @@
 
 .room{
+  float: left;
+  display: table;
   width: 100%;
-  height: 180rpx;
+  height: 110rpx;
   font-size: 25rpx;
   border-width: 2rpx;
   border-bottom-style: dashed;
@@ -10,12 +12,16 @@
 
 .room image{
   float:left; 
-  margin-top:15rpx;
-  margin-bottom:15rpx;
+  margin-top:10rpx;
+  margin-bottom:10rpx; 
   margin-left:10rpx;
   margin-right:10rpx;  
-  width: 150rpx;
-  height: 150rpx;
+  width: 60rpx;
+  height: 80rpx;
+}
+
+.room-claw{
+  height: 40rpx;
 }
 
 .room-cell-first{
@@ -27,14 +33,17 @@
 }
 
 .room-cell-text{
+  display: table-cell;
+  vertical-align: middle;
   padding-left: 5rpx;
   width: 480rpx;
   float:left;
-  margin-top:10rpx;
+  /* margin-top:10rpx; */
   margin-left:20rpx; 
 }
 
 .room-text-line{
   height: 40rpx;
   line-height: 40rpx;
+  display:inline-block;
 }

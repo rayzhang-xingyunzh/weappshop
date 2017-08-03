@@ -62,14 +62,25 @@
                   <text class="room-label-text">日托价格</text>
                   <image class="bone" mode="aspectFit" src="/src/images/bone.png" />
                 </view>
-                <view class="day-care-price-text">小型犬、猫 20元 / 6小时</view>
-                <view class="day-care-price-text">小型犬、猫 20元 / 6小时</view>
-                <view class="day-care-price-text">小型犬、猫 20元 / 6小时</view>
-                <view class="day-care-price-text">不足6h按6h计算</view>
+                <view class="day-care-price-text">
+                  <text space="emsp">小型犬、猫 20元/6小时</text>
+                </view>
+                <view style="background-color:#F495A0" class="day-care-price-text">
+                  <text space="emsp">中型犬、猫 25元/6小时</text>
+                </view>
+                <view class="day-care-price-text">
+                  <text space="emsp">大型犬、猫 35元/6小时</text>
+                </view>
+                <view style="background-color:#784A4F" class="day-care-price-text">
+                  <text>不足6h按6h计算</text>
+                </view>
               </view>
               <view class="day-care-info">
                 <image class="day-care-info-claw" mode="aspectFit" src="/src/images/claw.png"></image>
                 <image class="day-care-info-ps" mode="aspectFit" src="/src/images/ps.png"></image>
+                <view class="day-care-info-text">
+                  <text>寄养七天送洗澡一次\n两宠物共住一房加收50%房费\n节假日房价上调10% 请您谅解</text>
+                </view>
               </view>
             </view>
             <view class="rooms">
