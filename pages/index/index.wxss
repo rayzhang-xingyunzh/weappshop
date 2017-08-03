@@ -107,6 +107,8 @@
 }
 
 .tab-background-bottom{
+  width: 738rpx;
+  position: fixed;
   margin-top: -4rpx;
   height: 34rpx;
   margin-right: 7rpx;
@@ -148,7 +150,7 @@
 }
 
 .day-care{
-  margin-top:30rpx;
+  padding-top:30rpx;
   height: 220rpx;
 }
 
@@ -185,7 +187,7 @@
 }
 
 .day-care-price-text{
-  font-weight: lighter;
+  /* font-weight: lighter; */
   color: white;
   width: 320rpx;
   background-color: #F6AAB3;
@@ -225,7 +227,7 @@
 }
 
 .room-label-text{
-  font-weight: lighter;
+  /* font-weight: lighter; */
   color: #5E1B25;
   font-size: 28rpx;
   float: left;
