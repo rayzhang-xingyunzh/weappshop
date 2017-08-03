@@ -106,7 +106,7 @@
           </view> -->
           <view class="tab-content">
             <view wx:for="{{markups}}" class="markup-grid-cell">
-              <image mode="aspectFit" data-url="{{item}}" src="{{item}}"></image>
+              <image catchtap="showImage" mode="aspectFit" data-origin="{{item}}" src="{{item}}"></image>
             </view>
           </view>
         </view>

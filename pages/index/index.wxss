@@ -170,7 +170,12 @@
   width: 350rpx;
 }
 
+.rooms{
+    margin-top:10rpx;
+}
+
 .day-care-info-text{
+  color: #4B0000;
   height: 100rpx;
   border-radius: 15rpx;
   border: #F295A0 4rpx dashed;

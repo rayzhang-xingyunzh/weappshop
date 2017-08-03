@@ -105,33 +105,33 @@ Page({
     }, {
       origin: "http://i1.buimg.com/599607/a729729f18969f18.jpg",
       image: "http://i1.buimg.com/599607/a729729f18969f18t.jpg",
-      title: "3D山水全景套间",
-      subTitle: "180元/天"
+      title: "3D地中海套间",
+      subTitle: "150元/天"
     }, {
       origin: "http://i1.buimg.com/599607/a729729f18969f18.jpg",
       image: "http://i1.buimg.com/599607/a729729f18969f18t.jpg",
-      title: "3D山水全景套间",
-      subTitle: "180元/天"
+      title: "3D欧式街景套间",
+      subTitle: "150元/天"
     }, {
       origin: "http://i1.buimg.com/599607/a729729f18969f18.jpg",
       image: "http://i1.buimg.com/599607/a729729f18969f18t.jpg",
-      title: "3D山水全景套间",
-      subTitle: "180元/天"
+      title: "巧克力工厂套间",
+      subTitle: "110元/天"
     }, {
       origin: "http://i1.buimg.com/599607/a729729f18969f18.jpg",
       image: "http://i1.buimg.com/599607/a729729f18969f18t.jpg",
-      title: "3D山水全景套间",
-      subTitle: "180元/天"
+      title: "雨中漫步套间",
+      subTitle: "100元/天"
     }, {
       origin: "http://i1.buimg.com/599607/a729729f18969f18.jpg",
       image: "http://i1.buimg.com/599607/a729729f18969f18t.jpg",
-      title: "3D山水全景套间",
-      subTitle: "180元/天"
+      title: "黑白模仿城套间",
+      subTitle: "80元/天"
     }, {
       origin: "http://i1.buimg.com/599607/a729729f18969f18.jpg",
       image: "http://i1.buimg.com/599607/a729729f18969f18t.jpg",
-      title: "3D山水全景套间",
-      subTitle: "180元/天"
+      title: "温馨糖果房套间",
+      subTitle: "80元/天"
     }],
     markups: [
       "http://mmbiz.qpic.cn/mmbiz_jpg/JWk88JUM5RfyMMzCxrfcibveEoma3RDm9ha9PDvGC18oru9J0RP3wNq4PsNuB8AWQ0DlKHsJZiaOfP8mOxhYeFicQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1",
