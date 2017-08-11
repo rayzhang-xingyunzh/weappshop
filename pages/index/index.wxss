@@ -1,7 +1,7 @@
 
 
 .scroll-area{
-  height: 75%;
+  height: 76%;
   background-position: bottom;
   background-image: url(https://mmbiz.qpic.cn/mmbiz_png/JWk88JUM5RciaZnyLyyQp2VDqgicE2O0nz4SrXOZck9gib7QaUWAWYE8zDeb29jRXnhgO748x9kPDRrvxfm2o4pfQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1);
   background-size: 738rpx 50%;
@@ -102,15 +102,10 @@
 }
 
 .tab-background-top image{
-  height: 30rpx;
   width: 100%;
 }
 
 .tab-background-bottom{
-  width: 738rpx;
-  position: fixed;
-  margin-top: -4rpx;
-  height: 34rpx;
   margin-right: 7rpx;
   margin-left: 7rpx;
 }
@@ -261,7 +256,6 @@
 }
 
 .info-basic-root{
-  height: 58%;
   width: 100%;
   background-color: white;
 }
@@ -345,11 +339,9 @@
   margin-right: 5rpx;
 }
 
-.info-wechat button::after {
   content:none;
 }
 
-.info-wechat button{
   padding:0 !important; 
   float: left;
   height: 100%;

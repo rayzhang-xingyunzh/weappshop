@@ -52,6 +52,12 @@ Page({
     })
   },
 
+  showCode:function(){
+    wx.previewImage({
+      urls: [""],
+    })
+  },
+
   phoneCall: function () {
     var pn = this.data.phoneNumber
     wx.showActionSheet({
@@ -125,7 +131,7 @@ Page({
     }, {
       origin: "http://i1.buimg.com/599607/a729729f18969f18.jpg",
       image: "http://i1.buimg.com/599607/a729729f18969f18t.jpg",
-      title: "黑白模仿城套间",
+      title: "黑白魔方城套间",
       subTitle: "80元/天"
     }, {
       origin: "http://i1.buimg.com/599607/a729729f18969f18.jpg",
@@ -144,20 +150,23 @@ Page({
     sales: [{
       origin: "http://i1.buimg.com/599607/0b777f6781f4ad0f.jpg",
       image: "http://i1.buimg.com/599607/0b777f6781f4ad0ft.jpg",
-      title: "小型犬精致洗护套餐",
-      subTitle: "（10斤内）39元！"
+      category: "英国斗牛犬",
+      sex: true,
+      birthday:"2017.10.10",
+      weight:"10kg",
+      isVaccinated:true
     }],
     englishName: "Puppy pet hotel",
     name: "狗狗大人 宠物酒店",
     nickName: "宠物·酒店",
-    phoneNumber: "18502794699",
+    phoneNumber: "18674075127",
     location: {
       address: '武汉洪山区杨园南路武铁佳苑东门底商19号商铺',
       latidude:30.5908,
       longitude: 114.3533,
       name: '狗狗大人宠物酒店(武汉钻石总店)'
     },
-    tabSelectedIndex: 1,
+    tabSelectedIndex: 0,
     introduction: "  狗狗大人宠物酒店是一家致力于打造全武汉宠物级高端住宿的宠物店，为主人外出导致的家中爱宠无法照顾提供方便以及免除后顾之忧。\n  狗狗大人宠物酒店所有宠物住宿房间均为独立单间。每个房间配备独立摄像头和一位贴心管家。您可以在任何地点24小时观看狗狗住店情况。私人管家独立负责您的爱宠，24小时待命。让您的爱宠远离笼养与孤独。\n  狗狗大人宠物酒店服务项目：酒店式宠物寄养。世界级NGCK宠物协会B级美容师坐镇美容。\n  宠物用品出售。",
     openTime: '9:30-22:00'
   }

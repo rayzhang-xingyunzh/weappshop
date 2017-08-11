@@ -1,4 +1,4 @@
-@import '/templates/promotionCell/promotionCell.wxss';
+@import '/templates/saleCell/saleCell.wxss';
 @import '/templates/roomCell/roomCell.wxss';
 
 

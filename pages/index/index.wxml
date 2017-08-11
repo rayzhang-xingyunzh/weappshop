@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <import src="/templates/roomCell/roomCell.wxml" />
+<import src="/templates/saleCell/saleCell.wxml" />
 <view class="page">
   <scroll-view scroll-y="true" class="scroll-area">
     <view class="images-panel">
@@ -79,7 +80,7 @@
                 <image class="day-care-info-claw" mode="aspectFit" src="/src/images/claw.png"></image>
                 <image class="day-care-info-ps" mode="aspectFit" src="/src/images/ps.png"></image>
                 <view class="day-care-info-text">
-                  <text>寄养七天送洗澡一次\n两宠物共住一房加收50%房费\n节假日房价上调10% 请您谅解</text>
+                  <text>寄养7天送1张50元洗澡代金券\n两宠物共住一房加收50%房费\n节假日房价上调10%-30%</text>
                 </view>
               </view>
             </view>
@@ -116,7 +117,9 @@
         <view class="{{tabSelectedIndex == 3? 'show': 'hide'}} tab">
 
           <view class="tab-content">
-
+            <block wx:for="{{sales}}">
+              <template is="saleCell" data="{{...item}}"></template>
+            </block>
           </view>
         </view>
         <!--tab 3 end  -->
@@ -126,7 +129,7 @@
     <!-- tab-panel end -->
   </scroll-view>
   <view class="tab-background-bottom">
-    <image mode="aspectFit top" src="/src/images/tab_bg_bottom.png" />
+    <image mode="aspectFit" src="/src/images/tab_bg_bottom.png" />
   </view>
   <view class="info-panel">
     <view class="info-basic-root">
@@ -154,10 +157,11 @@
           <image mode="aspectFit" src="/src/images/phone.png" catchtap="phoneCall" />
         </view>
         <view class="info-wechat info-basic-right">
-          <button open-type="contact" class="wechat-button">
+          <!--commented for contact button  -->
+          <!-- <button open-type="contact" class="wechat-button">
             <image mode="aspectFit" src="/src/images/wx.png "/>
-          </button>
-
+          </button> -->
+          <image mode="aspectFit" src="/src/images/wx.png" catchtap="showCode" />
         </view>
 
       </view>
