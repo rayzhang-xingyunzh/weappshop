@@ -102,10 +102,16 @@
 }
 
 .tab-background-top image{
+   /* margin-top: -5%;  */
+   height: 30rpx; 
   width: 100%;
 }
 
 .tab-background-bottom{
+  /* width: 738rpx;
+  position: fixed; */
+  margin-top: -1.2%;
+  height: 1%;
   margin-right: 7rpx;
   margin-left: 7rpx;
 }
@@ -256,6 +262,7 @@
 }
 
 .info-basic-root{
+  height: 59%;
   width: 100%;
   background-color: white;
 }
@@ -339,9 +346,11 @@
   margin-right: 5rpx;
 }
 
+.wechat-button::after {
   content:none;
 }
 
+.wechat-button{
   padding:0 !important; 
   float: left;
   height: 100%;
