@@ -183,7 +183,7 @@
   border-radius: 15rpx;
   border: #F295A0 4rpx dashed;
   padding:10rpx;
-  font-size: 25rpx;
+  font-size: 24rpx;
   line-height: 34rpx;
 }
 

@@ -12,14 +12,14 @@
       <view class="sale-text-line">
         <view class="sale-text-label">性别:</view>
         <view class="sale-text-field-short">{{sex?"男孩":"女孩"}}</view>
-        <view class="sale-text-label">生日:</view>
-        <view class="sale-text-field-long">{{birthday}}</view>
+        <view class="sale-text-label">年龄:</view>
+        <view class="sale-text-field-long">{{age}}</view>
       </view>
       <view class="sale-text-line">
-        <view class="sale-text-label">体重:</view>
-        <view class="sale-text-field-short">{{weight}}</view>
         <view class="sale-text-label">疫苗:</view>
-        <view class="sale-text-field-long">{{isVaccinated?"已":"未"}}接种</view>
+        <view class="sale-text-field-long">{{vaccination}}</view>
+        <view class="sale-text-label">售价:</view>
+        <view class="sale-text-field-short">{{price}}</view>
       </view>
     </view>
   </view>
