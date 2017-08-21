@@ -13,3 +13,10 @@ page{
 .page{
   height: 100%;
 }
+
+.scadv{
+  color: white;
+  margin-top:70rpx;
+  text-align: center;
+  font-size: 24rpx;
+}

@@ -148,7 +148,7 @@ Page({
       origin: "http://mmbiz.qpic.cn/mmbiz_jpg/JWk88JUM5RdA9avuhWdxMib6c2NgytT1IB30KgbwWyQoQE8sNbhqCiaUHL2zCrwsXhsSEn2ic87fCfDwjwrflf2lQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1",
       image: "http://mmbiz.qpic.cn/mmbiz_jpg/JWk88JUM5RdA9avuhWdxMib6c2NgytT1IB30KgbwWyQoQE8sNbhqCiaUHL2zCrwsXhsSEn2ic87fCfDwjwrflf2lQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1",
       title: "黑白魔方城套间",
-      subTitle: "80元/天"
+      subTitle: "100元/天"
     }, {
       origin: "http://mmbiz.qpic.cn/mmbiz_jpg/JWk88JUM5RdA9avuhWdxMib6c2NgytT1IicanyreoLAGB7skknk5fbNqnNgib64uSeiaenwp8hmRWWFlico2fliaAzgw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1",
       image: "http://mmbiz.qpic.cn/mmbiz_jpg/JWk88JUM5RdA9avuhWdxMib6c2NgytT1IicanyreoLAGB7skknk5fbNqnNgib64uSeiaenwp8hmRWWFlico2fliaAzgw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1",

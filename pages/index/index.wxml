@@ -44,6 +44,7 @@
           <view class="tab-content">
             <view class="introduction">
               <text class="introduction-text" space="emsp">{{introduction}}</text>
+              <view class="scadv">由星云创新工作室提供技术支持</view>
             </view>
           </view>
 
