@@ -139,116 +139,25 @@
   margin-right:7rpx; 
 }
 
-.introduction{
-  padding: 20rpx;
-  line-height: 40rpx;
-  text-align: justify;
-  font-size: 28rpx;
-  height: 540rpx;
-}
-
-.introduction-text{
-  color: #815155;
-}
-
-.day-care{
-  padding-top:30rpx;
-  height: 220rpx;
-}
-
-.day-care-price{
-  float: left;
-  height: 210rpx;
-  width: 350rpx;
-}
-
-.day-care-label{
-  margin-left: 30rpx;
+.bus{
   width: 100%;
-  height: 50rpx;
+  display:flex;
+  justify-content: center;
 }
 
-.day-care-info{
-  float: left;
-  height: 210rpx;
-  width: 350rpx;
+.bus image{
+  width: 650rpx;
+  height: 300rpx;
 }
 
-.rooms{
-    margin-top:10rpx;
+.clickToGo{
+  display:flex;
+  justify-content: center;
 }
 
-.day-care-info-text{
-  color: #4B0000;
-  height: 100rpx;
-  border-radius: 15rpx;
-  border: #F295A0 4rpx dashed;
-  padding:10rpx;
-  font-size: 24rpx;
-  line-height: 34rpx;
-}
-
-.day-care-price-text{
-  /* font-weight: lighter; */
-  color: white;
-  width: 320rpx;
-  background-color: #F6AAB3;
-  text-align:center;
-  margin-left:20rpx;
-  height: 40rpx;
-  line-height: 40rpx;
-  font-size: 24rpx;
-}
-
-.day-care-info-claw{
-  width: 40rpx;
-  height: 40rpx;
-  /* margin-top:30rpx; */
-  margin-left: 10rpx;
-}
-
-.day-care-info-ps{
-  margin-left: 162rpx;
-  width: 110rpx;
-  height: 70rpx;
-}
-
-
-.room-label{
-  margin-left: 30rpx;
-  width: 100%;
-  height: 50rpx;
-}
-
-.bone{
-  /* margin-left: 1rpx;
-  margin-right: 1rpx; */
-  float:left;
-  width: 80rpx;
-  height: 40rpx;
-}
-
-.room-label-text{
-  /* font-weight: lighter; */
-  color: #5E1B25;
-  font-size: 28rpx;
-  float: left;
-  line-height: 40rpx;
-}
-
-.markup-grid-cell{
-   float:left;
-   width:237rpx;
-   height: 237rpx;
-   border-width: 2rpx;
-   border-color: #F296A1;
-   border-style: solid;
-   box-sizing: border-box;
-}
-
-.markup-grid-cell image{
-  height: 100%;
-  width: 100%;
+.clickToGo image{
+  width: 300rpx;
+  height: 200rpx;
 }
 
 .info-panel{

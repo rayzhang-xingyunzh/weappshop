@@ -13,23 +13,7 @@
       </swiper>
     </view>
     <!--<view class="page">-->
-    <view class="tabbar-panel">
-      <view class="tabbar">
-        <view class="{{tabSelectedIndex == 0?'tabbar-item-selected':'tabbar-item-normal'}} tabbar-item" data-tabid="0" catchtap="selectTab">
-          <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 0?'introductionS.png':'introduction.png'}}" />
-        </view>
-        <view class="{{tabSelectedIndex == 1?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="1" catchtap="selectTab">
-          <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 1?'hotelS.png':'hotel.png'}}" />
-        </view>
-        <view class="{{tabSelectedIndex == 2?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="2" catchtap="selectTab">
-          <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 2?'petBeautifyS.png':'petBeautify.png'}}" />
-        </view>
-        <view class="{{tabSelectedIndex == 3?'tabbar-item-selected':'tabbar-item-normal'}}  tabbar-item" data-tabid="3" catchtap="selectTab">
-          <image mode="aspectFit" src="/src/images/{{tabSelectedIndex == 3?'salePetS.png':'salePet.png'}}" />
-        </view>
-      </view>
-      <!-- tabbar end -->
-    </view>
+
     <!-- tabbar-panel end -->
     <view class="tab-panel">
       <view class="tabs">
@@ -37,93 +21,22 @@
           <image mode="aspectFit" src="/src/images/tab_bg_top.png" />
         </view>
         <!--tab 0  -->
-        <view class="{{tabSelectedIndex == 0?'show':'hide'}} tab">
+        <view class="show tab">
           <!-- <view class="tab-background-top">
             <image mode="aspectFit" src="/src/images/tab_bg_top.png" />
           </view> -->
           <view class="tab-content">
-            <view class="introduction">
-              <text class="introduction-text" space="emsp">{{introduction}}</text>
-              <view class="scadv">由星云创新工作室提供技术支持</view>
+            <view class="bus">
+              <image src="/src/images/navigationBus.png" mode="aspectFit"/>
+            </view>
+            <view class="clickToGo">
+              <image src="/src/images/clickToGo.png" catchtap="goToMain" mode="aspectFit"/>
             </view>
           </view>
 
         </view>
         <!-- tab 0 end -->
 
-        <!-- tab 1  -->
-        <view class="{{tabSelectedIndex == 1? 'show': 'hide'}} tab">
-          <!-- <view class="tab-background-top">
-            <image mode="aspectFit" src="/src/images/tab_bg_top.png" />
-          </view> -->
-          <view class="tab-content">
-            <view class="day-care">
-              <view class="day-care-price">
-                <view class="day-care-label">
-                  <image class="bone" mode="aspectFit" src="/src/images/bone.png" />
-                  <text class="room-label-text">日托价格</text>
-                  <image class="bone" mode="aspectFit" src="/src/images/bone.png" />
-                </view>
-                <view class="day-care-price-text">
-                  <text space="emsp">小型犬、猫 20元/6小时</text>
-                </view>
-                <view style="background-color:#F495A0" class="day-care-price-text">
-                  <text space="emsp">中型犬、猫 25元/6小时</text>
-                </view>
-                <view class="day-care-price-text">
-                  <text space="emsp">大型犬、猫 35元/6小时</text>
-                </view>
-                <view style="background-color:#784A4F" class="day-care-price-text">
-                  <text>不足6h按6h计算</text>
-                </view>
-              </view>
-              <view class="day-care-info">
-                <image class="day-care-info-claw" mode="aspectFit" src="/src/images/claw.png"></image>
-                <image class="day-care-info-ps" mode="aspectFit" src="/src/images/ps.png"></image>
-                <view class="day-care-info-text">
-                  <text>寄养7天送1张50元洗澡代金券\n两宠物共住一房加收50%房费\n节假日房价上调10%-30%</text>
-                </view>
-              </view>
-            </view>
-            <view class="rooms">
-              <view class="room-label">
-                <image class="bone" mode="aspectFit" src="/src/images/bone.png" />
-                <text class="room-label-text">住宿价格</text>
-                <image class="bone" mode="aspectFit" src="/src/images/bone.png" />
-              </view>
-
-              <block wx:for="{{rooms}}">
-                <template is="roomCell" data="{{...item}}"></template>
-              </block>
-            </view>
-
-          </view>
-        </view>
-        <!--tab 1 end  -->
-
-        <!--tab 2  -->
-        <view class="{{tabSelectedIndex == 2? 'show': 'hide'}} tab">
-          <!-- <view class="tab-background-top">
-            <image mode="aspectFit" src="/src/images/tab_bg_top.png" />
-          </view> -->
-          <view class="tab-content">
-            <view wx:for="{{markups}}" class="markup-grid-cell">
-              <image catchtap="showMarkupImages" mode="aspectFit" data-origin="{{item}}" src="{{item}}"></image>
-            </view>
-          </view>
-        </view>
-        <!-- tab 2 end  -->
-
-        <!-- tab 3  -->
-        <view class="{{tabSelectedIndex == 3? 'show': 'hide'}} tab">
-
-          <view class="tab-content">
-            <block wx:for="{{sales}}">
-              <template is="saleCell" data="{{...item}}"></template>
-            </block>
-          </view>
-        </view>
-        <!--tab 3 end  -->
       </view>
       <!-- tabs end -->
     </view>
