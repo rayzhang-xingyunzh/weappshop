@@ -91,7 +91,7 @@ Page({
 
   , goToMain:function(event){
     wx.navigateToMiniProgram({
-      appId: ''
+      appId: 'wxf3b9b807aa8bde03'
     })
   }
 
