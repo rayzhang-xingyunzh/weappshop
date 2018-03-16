@@ -6,7 +6,7 @@
 
 .images-panel{
   height:350rpx;
-  background-image: url(http://i1.buimg.com/599607/82da9313f7d3b08b.png);
+  background-image: url(https://mmbiz.qpic.cn/mmbiz_png/0fDicUBTeAC78wgfH9EyricxrYBqkWONvBRDOAaLBl5eyy0FQRXwu2M2gNmPmicWWiag0C8kSDN4TPXfg0v6kzBF7Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1);
   background-size: 100% 100%;
 }
 

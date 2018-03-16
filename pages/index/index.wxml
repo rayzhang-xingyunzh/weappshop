@@ -45,7 +45,7 @@
 
         <view class="{{tabSelectedIndex == 0?'show':'hide'}} tab-promotion tab">
           <view class="vip-benefit">
-            <image mode="aspectFit" src="http://i4.piimg.com/599607/e95d0283e91909cb.png" />
+            <image mode="aspectFit" src="/src/images/vipb.png" />
             <view class="benefit-text">
               <view>1.会员爱宠铭牌定制</view>
               <view>2.会员爱宠洗澡美容专用毛巾</view>
